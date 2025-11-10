@@ -972,10 +972,6 @@ video {
   max-height: 44px;
 }
 
-.max-h-\[\] {
-  max-height: ;
-}
-
 .max-h-\[48px\] {
   max-height: 48px;
 }
@@ -990,10 +986,6 @@ video {
 
 .w-\[210px\] {
   width: 210px;
-}
-
-.w-\[240px\] {
-  width: 240px;
 }
 
 .w-\[270px\] {
@@ -1020,32 +1012,12 @@ video {
   width: 100%;
 }
 
-.w-\[\] {
-  width: ;
-}
-
-.w-\[356\.66668701171875\] {
-  width: 356.66668701171875;
-}
-
-.w-\[356\.66668701171875px\] {
-  width: 356.66668701171875px;
-}
-
-.w-\[356\.6px\] {
-  width: 356.6px;
-}
-
 .min-w-\[200px\] {
   min-width: 200px;
 }
 
 .min-w-full {
   min-width: 100%;
-}
-
-.min-w-\[240px\] {
-  min-width: 240px;
 }
 
 .max-w-\[114px\] {
@@ -2155,11 +2127,6 @@ video {
   background-color: rgb(223 236 198 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[\#DFECC6\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(223 236 198 / var(--tw-bg-opacity, 1));
-}
-
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -3049,20 +3016,8 @@ video {
   height: 81.8px;
 }
 
-.\*\:w-\[240px\] > * {
-  width: 240px;
-}
-
 .\*\:min-w-\[240px\] > * {
   min-width: 240px;
-}
-
-.\*\:min-w-\[220px\] > * {
-  min-width: 220px;
-}
-
-.\*\:min-w-\[20px\] > * {
-  min-width: 20px;
 }
 
 .\*\:items-center > * {
@@ -3362,10 +3317,6 @@ video {
     margin-top: 139.69px;
   }
 
-  .desktop\:grid {
-    display: grid;
-  }
-
   .desktop\:hidden {
     display: none;
   }
@@ -3376,10 +3327,6 @@ video {
 
   .desktop\:h-\[294px\] {
     height: 294px;
-  }
-
-  .desktop\:h-\[300px\] {
-    height: 300px;
   }
 
   .desktop\:h-\[620px\] {
@@ -3426,33 +3373,16 @@ video {
     width: 953.2491455078125px;
   }
 
-  .desktop\:w-fit {
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
   .desktop\:w-full {
     width: 100%;
-  }
-
-  .desktop\:w-\[240px\] {
-    width: 240px;
   }
 
   .desktop\:min-w-\[400px\] {
     min-width: 400px;
   }
 
-  .desktop\:min-w-\[240px\] {
-    min-width: 240px;
-  }
-
   .desktop\:max-w-\[1200px\] {
     max-width: 1200px;
-  }
-
-  .desktop\:max-w-\[\] {
-    max-width: ;
   }
 
   .desktop\:grid-cols-2 {
@@ -3465,10 +3395,6 @@ video {
 
   .desktop\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
-  .desktop\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .desktop\:grid-rows-1 {
@@ -3543,17 +3469,5 @@ video {
 
   .\*\:desktop\:w-\[386\.6px\] > * {
     width: 386.6px;
-  }
-
-  .\*\:desktop\:w-\[\] > * {
-    width: ;
-  }
-
-  .\*\:desktop\:w-\[356\.6px\] > * {
-    width: 356.6px;
-  }
-
-  .\*\:desktop\:w-\[386\.6666564941406\] > * {
-    width: 386.6666564941406;
   }
 }
