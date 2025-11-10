@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Area</title>
-    <link rel="stylesheet" href="./output.css">
-</head>
-<body>
-    <div class="text-9xl bg-green-500">Hello</div>
-</body>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <div
+      class="max-w-[375px] tablet:max-w-[800px] desktop:max-w-[1200px] flex flex-col mx-auto px-4 tablet:px-10"
+    >
+      <!-- Navigation Menu -->
+      <!-- Navigation Bar -->
+      <nav id="navbar" class="h-[106px] tablet:h-[148px]">
+        <div
+          class="tablet:hidden h-[78px] rounded-b-[20px] shadow-md flex justify-between items-center desktop:grid-cols-3 p-[20px]"
+        >
+          <div>
+            <div class="text-[30px]">Area</div>
+          </div>
+
+          <div class="cursor-pointer">
+            <img src="../assets/svg/icons/menu-icon.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="hidden tablet:flex justify-between items-center h-[148px]">
+          <div class="text-[30px] min-w-[127px]">Area</div>
+
+          <div
+            class="w-[399px] h-[60px] font-dm-sans font-bold flex justify-center items-center text-[14px] gap-[27px] rounded-full mx-auto"
+          >
+            <span>Benefits</span>
+            <span>Specifications</span>
+            <span>How-to</span>
+            <span>Contact-us</span>
+          </div>
+
+          <div class="flex justify-end">
+            <div
+              class="bg-[#485C11] text-white px-[22px] py-[14px] flex justify-center items-center rounded-full"
+            >
+              Learn More
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      
+      
+    </div>
+  </body>
 </html>
