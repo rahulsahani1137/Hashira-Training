@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <div
+      class="max-w-[375px] tablet:max-w-[800px] desktop:max-w-[1200px] flex flex-col mx-auto *:px-4 *:tablet:px-10"
+    >
+      <!-- Navigation Menu -->
+      <!-- Navigation Bar -->
+      <nav
+        id="navbar"
+        class="relative h-[106px] tablet:h-[148px] px-0 tablet:px-0"
+      >
+        <div
+          class="tablet:hidden h-[78px] rounded-b-[20px] shadow-md flex justify-between items-center p-[20px]"
+        >
+          <div>
+            <div class="text-[30px]">Area</div>
+          </div>
+
+          <div class="cursor-pointer" ref="hamburger-menu">
+            <img src="../assets/svg/icons/menu-icon.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="hidden tablet:flex justify-between items-center h-[148px]">
+          <div
+            class="font-dm-sans text-center font-medium text-[30px] tracking-[-0.05em] leading-[120%]"
+          >
+            Area
+          </div>
+
+          <div
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-dm-sans font-bold flex justify-center items-center *:text-[14px] gap-[27px] *:leading-[140%] *:tracking-[-0.025em] *:text-[#000000] rounded-full"
+          >
+            <a href="/benfits" target="_blank">Benefits</a>
+            <a href="/spec" target="_blank">Specifications</a>
+            <a href="/how-to" target="_blank">How-to</a>
+            <a href="/contact-us" target="_blank">Contact-us</a>
+          </div>
+
+          <div class="flex justify-end">
+            <button
+              class="bg-[#485C11] text-[#fff] px-[22px] py-[14px] text-[14px] leading-[140%] tracking-[-0.025em] font-bold text-center flex justify-center items-center font-dm-sans rounded-full gap-0.5"
+            >
+              Learn More
+              <svg
+                width="7"
+                height="20"
+                viewBox="0 0 7 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.01037 11.9875V8.04598L5.64939 8.08556L0.735155 13.0055L0 12.2703L4.91423 7.35606L4.96513 7.99508H1.0066V6.99414L6 7.00545V11.9875H5.01037Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="overflow-hidden">
+        <!-- Hero Image -->
+        <div class="flex flex-col">
+          <h1
+            class="font-crimson-text font-normal text-[76px] tablet:text-[120px] desktop:text-[140px] leading-[85%] tracking-[-0.005em] text-center text-black pb-[190px] tablet:pb-[230px] desktop:pb-[330px] min-w-full pt-[42px] tablet:pt-0"
+          >
+            Browse Everything.
+          </h1>
+          <div
+            class="h-[362px] bg-[#8E9C78] flex justify-center items-center rounded-[30px]"
+          >
+            <!-- Mobile Hero Image  -->
+            <div
+              class="flex justify-center items-center tablet:hidden w-[270px] rounded-[38px] bg-black border -mt-[81px] border-[#929292]"
+            >
+              <img
+                src="../assets/images/hero/mobile.png"
+                alt="mobile hero image"
+                class="border-black border-[10.9px] rounded-[38px]"
+              />
+            </div>
+
+            <!-- Tablet & Desktop Hero Image  -->
+            <div
+              class="justify-center items-center hidden tablet:flex rounded-[38px] bg-black border desktop:-mt-[141px] tablet:-mt-[60px] border-[#929292]"
+            >
+              <img
+                src="../assets/images/hero/desktop.png"
+                alt="mobile hero image"
+                class="tablet:w-[676.5px] desktop:w-[869px] border-black tablet:border-t-[13.9px] tablet:border-x-[13.9px] desktop:border-t-[10.9px] border-x-[10.9px] rounded-t-[38px]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trusted Clients Section  -->
+      <section class="mt-[50px]">
+        <div class="h-[436.5px] tablet:h-[334.5px] desktop:h-[235px]">
+          <div class="mb-[30px] text-[15px] font-dm-sans text-[#6F6F6F]">
+            Trusted By:
+          </div>
+          <div
+            class="min-h-[81.8px] grid grid-cols-2 tablet:grid-cols-4 desktop:grid-cols-6 justify-items-center items-center gap-x-[30px] gap-y-[20px] tablet:gap-x-[60px] *:flex *:items-center *:justify-center *:h-[81.8px]"
+          >
+            <div>
+              <img
+                src="../assets/svg/clients/logo-0.svg"
+                alt="client 1"
+                class="max-w-[114px] max-h-[44px] object-contain"
+              />
+            </div>
+            <div>
+              <img
+                src="../assets/svg/clients/logo-1.svg"
+                alt="client 2"
+                class="max-w-[114px] max-h-[44px] object-contain"
+              />
+            </div>
+            <div>
+              <img
+                src="../assets/svg/clients/logo-2.svg"
+                alt="client 3"
+                class="max-w-[114px] max-h-[44px] object-contain"
+              />
+            </div>
+            <div>
+              <img
+                src="../assets/svg/clients/logo-3.svg"
+                alt="client 4"
+                class="max-w-[114px] max-h-[44px] object-contain"
+              />
+            </div>
+            <div class="justify-self-end tablet:col-span-2 desktop:col-span-1">
+              <img
+                src="../assets/svg/clients/logo-4.svg"
+                alt="client 5"
+                class="max-w-[114px] max-h-[44px] object-contain"
+              />
+            </div>
+            <div
+              class="justify-self-start tablet:col-span-2 desktop:col-span-1"
+            >
+              <img
+                src="../assets/svg/clients/logo-5.svg"
+                alt="client 6"
+                class="max-w-[114px] max-h-[44px] object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="border-t border-[#E9E9E9] mx-4 tablet:mx-10"></div>
+
+      <!-- Benefits Section  -->
+      <section class="py-[50px]">
+        <div>
+          <h1
+            class="font-roboto-mono font-normal text-[10.5px] leading-[140%] tracking-[-.03em] text-[#485C11]"
+          >
+            Benefits
+          </h1>
+          <h1
+            class="font-crimson-text font-normal text-[50px] leading-[95%] tracking-[-.03em] my-[30px] text-headline"
+          >
+            We've cracked the code.
+          </h1>
+          <p
+            class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-paragraph"
+          >
+            Area provides real insights, without the data overload.
+          </p>
+        </div>
+
+        <!-- Benefit Section Grid  -->
+        <div
+          class="grid grid-cols-1 tablet:grid-cols-2 tablet:grid-rows-2 gap-5 desktop:grid-rows-1 desktop:grid-cols-4 my-[90px] *:border-divider *:py-10 *:border-t"
+        >
+          <div>
+            <img
+              src="../assets/svg/icons/cable-icon.svg"
+              alt="cable icon"
+              class="size-6"
+            />
+            <h3
+              class="font-crimson-text font-normal text-[18px] leading-[100%] tracking-[-0.03em] text-headline mt-6 mb-5"
+            >
+              Amplify Insights
+            </h3>
+            <p
+              class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-paragraph"
+            >
+              Unlock data-driven decisions with comprehensive analytics,
+              revealing key opportunities for strategic regional growth.
+            </p>
+          </div>
+          <div>
+            <img
+              src="../assets/svg/icons/earth-icon.svg"
+              alt="cable icon"
+              class="size-6"
+            />
+            <h3
+              class="font-crimson-text font-normal text-[18px] leading-[100%] tracking-[-0.03em] text-headline mt-6 mb-5"
+            >
+              Control Your Global Presence
+            </h3>
+            <p
+              class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-paragraph"
+            >
+              Manage and track satellite offices, ensuring consistent
+              performance and streamlined operations everywhere.
+            </p>
+          </div>
+          <div>
+            <img
+              src="../assets/svg/icons/account-icon.svg"
+              alt="cable icon"
+              class="size-6"
+            />
+            <h3
+              class="font-crimson-text font-normal text-[18px] leading-[100%] tracking-[-0.03em] text-headline mt-6 mb-5"
+            >
+              Remove Language Barriers
+            </h3>
+            <p
+              class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-paragraph"
+            >
+              Adapt to diverse markets with built-in localization for clear
+              communication and enhanced user experience.
+            </p>
+          </div>
+          <div>
+            <img
+              src="../assets/svg/icons/chart-icon.svg"
+              alt="cable icon"
+              class="size-6"
+            />
+            <h3
+              class="font-crimson-text font-normal text-[18px] leading-[100%] tracking-[-0.03em] text-headline mt-6 mb-5"
+            >
+              Visualize Growth
+            </h3>
+            <p
+              class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-paragraph"
+            >
+              Generate precise, visually compelling reports that illustrate your
+              growth trajectories across all regions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Component Bottom Image -->
+        <div
+          class="flex justify-center items-center mb-[100px] tablet:mb-[120px]"
+        >
+          <img
+            src="../assets/images/scene-one.png"
+            alt="scene1"
+            class="w-[343px] h-[600px] tablet:w-[720px] tablet:h-[600px] desktop:w-[1200px] desktop:h-[620px] object-cover rounded-[30px]"
+          />
+        </div>
+      </section>
+
+      <div
+        class="border-t border-[#E9E9E9] px-0 tablet:mx-10 desktop:hidden"
+      ></div>
+
+      <!-- See the big Picture Section-->
+      <section class="desktop:mb-[120px]">
+        <div
+          class="*:text-left grid grod-cols-1 desktop:grid-cols-2 desktop:gap-5 *:"
+        >
+          <div class="desktop:border-t desktop:border-[#E9E9E9]">
+            <h1
+              class="font-crimson-text font-normal text-[50px] leading-[95%] tracking-[-.03em] mt-[60px] text-headline"
+            >
+              See the Big Picture
+            </h1>
+            <p
+              class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] my-10 text-paragraph"
+            >
+              Area turns your data into clear, vibrant visuals that show you
+              exactly what's happening in each region.
+            </p>
+
+            <div
+              class="*:py-5 *:flex tablet:*:items-center *:justify-start *:gap-[30px] *:border-t *:border-divider"
+            >
+              <div>
+                <p
+                  class="text-paragraph font-dm-sans font-bold text-[15px] leading-[140%] tracking-[-0.005em]"
+                >
+                  01
+                </p>
+                <div
+                  class="font-dm-sans font-normal text-[15px] leading-[140%] text-headline tracking-[-0.005em]"
+                >
+                  Spot Trends in Seconds: No more digging through numbers.
+                </div>
+              </div>
+              <div>
+                <p
+                  class="text-paragraph font-dm-sans font-bold text-[15px] leading-[140%] tracking-[-0.005em]"
+                >
+                  02
+                </p>
+                <div
+                  class="font-dm-sans font-normal text-[15px] leading-[140%] text-headline tracking-[-0.005em]"
+                >
+                  Get Everyone on the Same Page: Share easy-to-understand
+                  reports with your team.
+                </div>
+              </div>
+              <div>
+                <p
+                  class="text-paragraph font-dm-sans font-bold text-[15px] leading-[140%] tracking-[-0.005em]"
+                >
+                  03
+                </p>
+                <div
+                  class="font-dm-sans font-normal text-[15px] leading-[140%] text-headline tracking-[-0.005em]"
+                >
+                  Make Presentations Pop: Interactive maps and dashboards keep
+                  your audience engaged.
+                </div>
+              </div>
+              <div>
+                <p
+                  class="text-paragraph font-dm-sans font-bold text-[15px] leading-[140%] tracking-[-0.005em]"
+                >
+                  04
+                </p>
+                <div
+                  class="font-dm-sans font-normal text-[15px] leading-[140%] text-headline tracking-[-0.005em]"
+                >
+                  Your Global Snapshot: Get a quick, clear overview of your
+                  entire operation.
+                </div>
+              </div>
+              <button
+                class="px-[22px] py-[14px] rounded-full bg-accent-secondary font-dm-sans text-base leading-[140%] tracking-[-0.0025em] font-bold text-[14px] text-center justify-start flex mt-10"
+              >
+                Discover More
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex justify-center items-center mb-[100px] tablet:mb-[120px] my-20 desktop:my-0"
+          >
+            <img
+              src="../assets/images/scene-two.png"
+              alt="scene1"
+              class="w-[343px] h-[600px] tablet:w-[720px] tablet:h-[600px] desktop:w-[1200px] desktop:h-[620px] object-cover rounded-[30px]"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Specifications Section  -->
+      <section class="border-t border-divider">
+        <!-- Why Choose Area Section -->
+        <div class="*:text-center flex flex-col my-20">
+          <p
+            class="font-roboto-mono font-normal text-[11px] leading-[140%] tracking-[-.001em] mb-[40px] text-accent-primary"
+          >
+            Specs
+          </p>
+          <h1
+            class="font-crimson-text font-normal text-[50px] leading-[95%] tracking-[-.03em] mt-[30px] text-headline"
+          >
+            Why Choose Area?
+          </h1>
+          <p
+            class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] my-[30px] text-paragraph text-center"
+          >
+            You need a solution that keeps up. That’s why we developed Area. A
+            developer-friendly approach to <br />
+            streamline your business.
+          </p>
+          <button
+            class="px-[22px] py-[14px] rounded-full bg-accent-secondary font-dm-sans text-base leading-[140%] tracking-[-0.0025em] font-bold text-[14px] text-center justify-start flex mx-auto"
+          >
+            Discover More
+          </button>
+        </div>
+
+        <!-- Specs Table  -->
+        <div class="flex overflow-x-auto mb-[120px]">
+          <!-- Column 1 -->
+          <div
+            class="min-w-[200px] tablet:w-[238.5px] desktop:min-w-[400px] shadow-[0px_2px_8px_#00000014] overflow-hidden rounded-[20px] border border-[#E9E9E9] flex flex-col justify-start items-start"
+          >
+            <div
+              class="self-stretch h-24 border-b border-[#929292] flex justify-center items-center"
+            >
+              <div
+                class="text-black text-[25.71px] font-dm-sans font-medium leading-[120%] tracking-[-0.08em]"
+              >
+                Area
+              </div>
+            </div>
+
+            <!-- Feature List -->
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <img
+                src="../assets/svg/icons/check-icon.svg"
+                alt=""
+                class="size-[14px]"
+              />
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Ultra-fast browsing
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <img
+                src="../assets/svg/icons/check-icon.svg"
+                alt=""
+                class="size-[14px]"
+              />
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Advanced AI insights
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <img
+                src="../assets/svg/icons/check-icon.svg"
+                alt=""
+                class="size-[14px]"
+              />
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Seamless integration
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <img
+                src="../assets/svg/icons/check-icon.svg"
+                alt=""
+                class="size-[14px]"
+              />
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Full UTF-8 support
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <img
+                src="../assets/svg/icons/check-icon.svg"
+                alt=""
+                class="size-[14px]"
+              />
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Full UTF-8 support
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <img
+                src="../assets/svg/icons/check-icon.svg"
+                alt=""
+                class="size-[14px]"
+              />
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Full UTF-8 support
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div
+            class="flex-1 min-w-[200px] overflow-hidden flex flex-col justify-start items-start"
+          >
+            <div
+              class="self-stretch h-24 border-b border-[#929292] flex justify-center items-center gap-4"
+            >
+              <div
+                class="text-black text-[22.86px] font-rethink-sans font-medium leading-[120%] tracking-[-0.08em] text-[#6F6F6F]"
+              >
+                WebSurge
+              </div>
+            </div>
+
+            <div class="border-r border-[#E9E9E9] w-full">
+              <div
+                class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+              >
+                <img
+                  src="../assets/svg/icons/check-icon.svg"
+                  alt=""
+                  class="size-[14px]"
+                />
+                <div
+                  class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+                >
+                  Fast browsing
+                </div>
+              </div>
+
+              <div
+                class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+              >
+                <img
+                  src="../assets/svg/icons/check-icon.svg"
+                  alt=""
+                  class="size-[14px]"
+                />
+                <div
+                  class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+                >
+                  Basic AI recommendations
+                </div>
+              </div>
+
+              <div
+                class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+              >
+                <img
+                  src="../assets/svg/icons/check-icon.svg"
+                  alt=""
+                  class="size-[14px]"
+                />
+                <div
+                  class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+                >
+                  Restricts customization
+                </div>
+              </div>
+
+              <div
+                class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+              >
+                <img
+                  src="../assets/svg/icons/close-icon.svg"
+                  alt=""
+                  class="size-[14px]"
+                />
+                <div
+                  class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+                >
+                  Basic AI insights
+                </div>
+              </div>
+
+              <div
+                class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+              >
+                <img
+                  src="../assets/svg/icons/check-icon.svg"
+                  alt=""
+                  class="size-[14px]"
+                />
+                <div
+                  class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+                >
+                  Fast browsing
+                </div>
+              </div>
+
+              <div
+                class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+              >
+                <img
+                  src="../assets/svg/icons/close-icon.svg"
+                  alt=""
+                  class="size-[14px]"
+                />
+                <div
+                  class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+                >
+                  Potential display errors
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 3 -->
+          <div
+            class="flex-1 min-w-[200px] overflow-hidden flex flex-col justify-start items-start"
+          >
+            <div
+              class="self-stretch h-24 py-10 border-b border-[#929292] flex justify-center items-start gap-4"
+            >
+              <div
+                class="text-black text-[21.65px] font-reddit-mono font-medium leading-[120%] tracking-[-0.08em] align-middle text-[#6F6F6F]"
+              >
+                HyperView
+              </div>
+            </div>
+
+            <!-- Feature Column -->
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <img
+                src="../assets/svg/icons/close-icon.svg"
+                alt=""
+                class="size-[14px]"
+              />
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Moderate speeds
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <img
+                src="../assets/svg/icons/close-icon.svg"
+                alt=""
+                class="size-[14px]"
+              />
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Steep learning curve
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <img
+                src="../assets/svg/icons/close-icon.svg"
+                alt=""
+                class="size-[14px]"
+              />
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                No AI assistance
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <img
+                src="../assets/svg/icons/close-icon.svg"
+                alt=""
+                class="size-[14px]"
+              />
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Moderate speeds
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <img
+                src="../assets/svg/icons/close-icon.svg"
+                alt=""
+                class="size-[14px]"
+              />
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Partial UTF-8 support
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <img
+                src="../assets/svg/icons/close-icon.svg"
+                alt=""
+                class="size-[14px]"
+              />
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Potential display errors
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial Section -->
+      <section
+        class="grid grid-col-1 tablet:grid-cols-2 gap-5 items-center mb-[40px] tablet:mb-[40px]"
+      >
+        <img
+          src="../assets/images/scene-three.png"
+          alt="scene1"
+          class="w-[343px] h-[343.0000305175781px] tablet:w-[720px] tablet:h-[720px] desktop:w-[590px] desktop:h-[669.3818359375px] object-cover rounded-[30px]"
+        />
+        <div
+          class="desktop:h-[669.3818359375px] desktop:w-[590px] desktop:border-t desktop:border-[#E9E9E9]"
+        >
+          <div
+            class="desktop:w-[540px] desktop:h-[294px] desktop:mt-[139.69px] tablet:m-[50px]"
+          >
+            <p
+              class="font-crimson-text text-[32px] tablet:text-[40px] leading-[90%] tablet:leading-[110%] tracking-[-0.03em] tablet:tracking-[-0.04em] text-left pt-[40px] desktop:leading-[105%] desktop:tracking-[-0.04em]"
+            >
+              “I was skeptical, but Area has completely transformed the way I
+              manage my business. The data visualizations are so clear and
+              intuitive, and the platform is so easy to use. I can't imagine
+              running my company without it.”
+            </p>
+            <div
+              class="flex desktop:flex-col items-baseline gap-[9px] mt-[50px]"
+            >
+              <p
+                class="text-[15px] desktop:leading-[140%] desktop:tracking-[-0.005em]"
+              >
+                John Smith
+              </p>
+              <p
+                class="font-roboto-mono text-[10.5px] tablet:text-[11px] desktop:text-[12px] desktop:leading-[140%] desktop:tracking-[-0.01em] text-[#485C11]"
+              >
+                Head of Data
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section
+        class="border-t border-divider h-[700px] pb-[100px] pt-[80px] tablet:h-[650px] desktop:h-[634px]"
+      >
+        <div class="">
+          <div class="tablet:w-full tablet:flex justify-between items-center">
+            <h4
+              class="text-[45px] font-crimson-text leading-[95%] tracking-[-0.03em] text-nowrap"
+            >
+              Map Your Success
+            </h4>
+            <button
+              class="py-[14px] px-[22px] bg-[#DFECC6] rounded-[1000px] font-dm-sans text-[14px] text-bold mt-10 tablet:mt-0"
+            >
+              Discover More
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="mt-20 flex gap-5 overflow-x-auto *:border-t *:border-divider desktop:h-[300px] desktop:w-fit"
+        >
+          <!-- Process 01  -->
+          <div>
+            <h1
+              class="font-dm-sans text-[64px] tablet:text-[80px] desktop:text-[80px] pt-[60px] text-[#929292] w-[240px] desktop:w-[386.6px]"
+            >
+              01
+            </h1>
+            <div class="w-[210px] desktop:w-[386.6px]">
+              <h3
+                class="text-[18px] font-crimson-text pb-[20px] tracking-[0.03em]"
+              >
+                Get Started
+              </h3>
+              <p
+                class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]"
+              >
+                With our intuitive setup, you're up and running in minutes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Process 02  -->
+          <div>
+            <h1
+              class="font-dm-sans text-[64px] tablet:text-[80px] desktop:text-[80px] pt-[60px] text-[#929292] w-[240px] desktop:w-[386.6px]"
+            >
+              02
+            </h1>
+            <div class="w-[210px] desktop:w-[386.6px]">
+              <h3
+                class="text-[18px] font-crimson-text pb-[20px] tracking-[0.03em]"
+              >
+                Customize and Configure
+              </h3>
+              <p
+                class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]"
+              >
+                Adapt Area to your specific requirements and preferences.
+              </p>
+            </div>
+          </div>
+
+          <!-- Process 03  -->
+          <div>
+            <h1
+              class="font-dm-sans text-[64px] tablet:text-[80px] desktop:text-[80px] pt-[60px] text-[#929292] w-[240px] desktop:w-[386.6px]"
+            >
+              03
+            </h1>
+            <div class="w-[210px] desktop:w-[386.6px]">
+              <h3
+                class="text-[18px] font-crimson-text pb-[20px] tracking-[0.03em]"
+              >
+                Grow Your Business
+              </h3>
+              <p
+                class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]"
+              >
+                Make informed decisions to exceed your goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Image  -->
+      <div class="flex justify-center items-center mb-10">
+        <img
+          src="../assets/images/scene-four.png"
+          alt="scene2"
+          class="w-[343px] h-[600px] tablet:w-[720px] tablet:h-[664.2px] desktop:w-[1200px] desktop:h-[664.2px] object-cover rounded-[30px]"
+        />
+      </div>
+
+      <!-- Contact Us Section  -->
+      <section>
+        <div class="mb-[120px] border-t border-divider"></div>
+        <div
+          class="flex justify-center items-center "
+        >
+          <h1
+            class="font-crimson-text text-[50px] leading-[95%] tracking-[-0.03em] whitespace-nowrap tablet:flex justify-center items-center tablet:text-[54px]"
+          >
+            Connect with us
+          </h1>
+        </div>
+
+        <div class="min-h-[42px] mt-[40px] flex justify-center items-center">
+          <p
+            class="text-[15px] w-[343px] leading-[140%] tracking-[-0.05em] font-dm-sans text-[#6F6F6F] text-center align-middle"
+          >
+            Schedule a quick call to learn how Area can turn your regional data
+            into a powerful advantage.
+          </p>
+        </div>
+        <div class="mt-[40px] w-full flex justify-center items-center">
+          <div
+            class="py-[14px] px-[22px] bg-[#485C11] rounded-[1000px] w-[343px] tablet:w-[520px] desktop:w-[600px] text-[#fff] font-bold font-dm-sans text-[14px] flex items-center justify-center gap-1"
+          >
+            Learn More
+            <svg
+              width="6"
+              height="7"
+              viewBox="0 0 6 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.01037 4.9934V1.05184L5.64939 1.09142L0.735155 6.01131L0 5.27615L4.91423 0.361923L4.96513 1.00094H1.0066V0L6 0.0113101V4.9934H5.01037Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="mt-[120px] border-b border-divider"></div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="tablet:min-h-[250px] desktop:w-full pb-5">
+        <div
+          class="h-[114px] tablet:h-[40px] w-full mt-[40px] font-dm-sans text-[14px] font-bold tablet:flex gap-[27px]"
+        >
+          <h4 class="mb-[27px]">Benefits</h4>
+          <h4 class="mb-[27px]">Specifications</h4>
+          <h4>How-to</h4>
+        </div>
+        <div
+          class="h-[70px] flex justify-between items-baseline mt-[80px] text-[#485C11] mb-[20px]"
+        >
+          <div>
+            <svg
+              width="32"
+              height="70"
+              viewBox="0 0 32 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.3379 21.5869L31.751 32.6748L27.9258 35.9121L22.3379 29.3125V45H24.8379V70H19.8379V45H17.3379V15H22.3379V21.5869ZM12.4248 44.999L7.83789 69.999H2.75L7.33789 44.999H12.4248ZM4.6748 35.8877L0 34.1123L7.22461 15H12.5752L4.6748 35.8877ZM17.3389 9.9502H12.3389V0H17.3389V9.9502Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <div
+            class="flex tablet:w-[484.2491760253906px] desktop:w-[953.2491455078125px] tablet:text-[11px]"
+          >
+            <p class="">© Area.</p>
+            <p class="ml-[16px]">2025</p>
+          </div>
+          <div><p class="tablet:text-[11px]">All Rights Reserved</p></div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
