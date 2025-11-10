@@ -12,134 +12,151 @@
     >
       <!-- Navigation Menu -->
       <!-- Navigation Bar -->
-      <nav id="navbar" class="h-[106px] tablet:h-[148px]">
+      <nav id="navbar" class="h-[106px] tablet:h-[148px] px-0 tablet:px-0">
         <div
-          class="tablet:hidden h-[78px] rounded-b-[20px] shadow-md flex justify-between items-center desktop:grid-cols-3 p-[20px]"
+          class="tablet:hidden h-[78px] rounded-b-[20px] shadow-md flex justify-between items-center p-[20px]"
         >
           <div>
             <div class="text-[30px]">Area</div>
           </div>
 
-          <div class="cursor-pointer">
+          <div class="cursor-pointer" ref="hamburger-menu">
             <img src="../assets/svg/icons/menu-icon.svg" alt="" />
           </div>
         </div>
 
         <div class="hidden tablet:flex justify-between items-center h-[148px]">
-          <div class="text-[30px] min-w-[127px]">Area</div>
+          <div class="font-dm-sans text-center font-medium text-[30px] tracking-[-0.05em] leading-[120%]">Area</div>
 
           <div
-            class="w-[399px] h-[60px] font-dm-sans font-bold flex justify-center items-center text-[14px] gap-[27px] rounded-full mx-auto"
+            class="font-dm-sans font-bold flex justify-center items-center *:text-[14px] gap-[27px] *:leading-[140%] *:tracking-[-0.025em] *:text-[#000000] rounded-full mx-auto"
           >
-            <span>Benefits</span>
-            <span>Specifications</span>
-            <span>How-to</span>
-            <span>Contact-us</span>
+            <a href="/benfits">Benefits</a>
+            <a href="/spec">Specifications</a>
+            <a href="/how-to">How-to</a>
+            <a href="/contact-us">Contact-us</a>
           </div>
 
           <div class="flex justify-end">
-            <div
-              class="bg-[#485C11] text-white px-[22px] py-[14px] flex justify-center items-center rounded-full"
+            <button
+              class="bg-[#485C11] text-[#fff] px-[22px] py-[14px] text-[14px] leading-[140%] tracking-[-0.025em] font-bold text-center flex justify-center items-center font-dm-sans rounded-full gap-0.5"
             >
               Learn More
-            </div>
+              <svg
+                width="7"
+                height="20"
+                viewBox="0 0 7 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.01037 11.9875V8.04598L5.64939 8.08556L0.735155 13.0055L0 12.2703L4.91423 7.35606L4.96513 7.99508H1.0066V6.99414L6 7.00545V11.9875H5.01037Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </nav>
 
       <!-- Hero Section -->
-      <section>
-        <h1
-          class="font-crimson-text font-normal text-[76px] tablet:text-[140px] desktop:text-[160px] leading-[85%] tablet:leading-[80%] dekstop:leading-[85%] tracking-[-.045em] tablet:tracking-[-0.05em] text-center overflow-hidden"
-        >
-          Browse everything.
-        </h1>
-
+      <section class="overflow-hidden">
         <!-- Hero Image -->
-        <div
-          class="mx-auto h-[362px] max-w-[343px] tablet:max-w-[720px] desktop:max-w-[1200px] bg-[#8E9C78] flex justify-center mt-[120px] items-center rounded-[30px]"
-        >
-          <!-- <div
-            class="flex justify-center items-center h-[644px] w-[907px] rounded-[24px] bg-black"
+        <div class="flex flex-col">
+          <h1
+            class="font-crimson-text font-normal text-[76px] tablet:text-[120px] desktop:text-[140px] leading-[85%] tracking-[-0.005em] text-center text-black pb-[190px] tablet:pb-[230px] desktop:pb-[330px] min-w-full pt-[42px] tablet:pt-0"
           >
-            <img
-              src="../assets//images/hero/desktop.png"
-              alt="Hero Image"
-              class="w-[869.74px] h-[607.44px] -mb-30 border-42 rounded-[24px]"
-            />
-          </div> -->
-        </div>
-      </section>
-
-      <!-- Trusted Clients Section  -->
-      <section class="mt-[50px]">
-        <div class="relative">
+            Browse Everything.
+          </h1>
           <div
-            class="h-[436.5px] tablet:h-[334.5px] mx-[16px] tablet:mx-[40px] desktop:h-[235px] border-b"
+            class="h-[362px] bg-[#8E9C78] flex justify-center items-center rounded-[30px]"
           >
-            <div class="h-[101px]">
-              <div class="pt-[50px] text-[15px] font-dm-sans text-[#6F6F6F]">
-                Trusted By:
-              </div>
+            <!-- Mobile Hero Image  -->
+            <div
+              class="flex justify-center items-center tablet:hidden w-[270px] rounded-[38px] bg-black border -mt-[81px] border-[#929292]"
+            >
+              <img
+                src="../assets/images/hero/mobile.png"
+                alt="mobile hero image"
+                class="border-black border-[10.9px] rounded-[38px]"
+              />
             </div>
-            <div class="mb-[50px]">
-              <div
-                class="min-h-[81.8px] grid grid-cols-2 tablet:grid-cols-4 desktop:grid-cols-6 justify-items-center items-center gap-x-[30px] gap-y-[20px] tablet:gap-x-[60px]"
-              >
-                <div class="flex justify-center items-center h-[81.8px]">
-                  <img
-                    src="../assets/svg/clients/logo-0.svg"
-                    alt="Trusted By 1"
-                    class="max-w-[114px] max-h-[44px] object-contain"
-                  />
-                </div>
-                <div class="flex justify-center items-center h-[81.8px]">
-                  <img
-                    src="../assets/svg/clients/logo-1.svg"
-                    alt="Trusted By 2"
-                    class="max-w-[114px] max-h-[44px] object-contain"
-                  />
-                </div>
-                <div class="flex justify-center items-center h-[81.8px]">
-                  <img
-                    src="../assets/svg/clients/logo-2.svg"
-                    alt="Trusted By 3"
-                    class="max-w-[114px] max-h-[44px] object-contain"
-                  />
-                </div>
-                <div class="flex justify-center items-center h-[81.8px]">
-                  <img
-                    src="../assets/svg/clients/logo-3.svg"
-                    alt="Trusted By 4"
-                    class="max-w-[114px] max-h-[44px] object-contain"
-                  />
-                </div>
-                <div
-                  class="flex justify-center items-center h-[81.8px] tablet:col-span-2 desktop:col-span-1"
-                >
-                  <img
-                    src="../assets/svg/clients/logo-4.svg"
-                    alt="Trusted By 5"
-                    class="max-w-[114px] max-h-[44px] object-contain"
-                  />
-                </div>
-                <div
-                  class="flex justify-center items-center h-[81.8px] tablet:col-span-2 desktop:col-span-1"
-                >
-                  <img
-                    src="../assets/svg/clients/logo-5.svg"
-                    alt="Trusted By 6"
-                    class="max-w-[114px] max-h-[44px] object-contain"
-                  />
-                </div>
-              </div>
+
+            <!-- Tablet & Desktop Hero Image  -->
+            <div
+              class="justify-center items-center hidden tablet:flex rounded-[38px] bg-black border desktop:-mt-[141px] tablet:-mt-[60px] border-[#929292]"
+            >
+              <img
+                src="../assets/images/hero/desktop.png"
+                alt="mobile hero image"
+                class="tablet:w-[676.5px] desktop:w-[869px] border-black tablet:border-t-[13.9px] tablet:border-x-[13.9px] desktop:border-t-[10.9px] border-x-[10.9px] rounded-t-[38px]"
+              />
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Trusted Clients Section  -->
+      <section class="mt-[50px]">
+        <div class="h-[436.5px] tablet:h-[334.5px] desktop:h-[235px]">
+          <div class="mb-[30px] text-[15px] font-dm-sans text-[#6F6F6F]">
+            Trusted By:
+          </div>
+          <div
+            class="min-h-[81.8px] grid grid-cols-2 tablet:grid-cols-4 desktop:grid-cols-6 justify-items-center items-center gap-x-[30px] gap-y-[20px] tablet:gap-x-[60px] *:flex *:items-center *:justify-center *:h-[81.8px]"
+          >
+            <div>
+              <img
+                src="../assets/svg/clients/logo-0.svg"
+                alt="client 1"
+                class="max-w-[114px] max-h-[44px] object-contain"
+              />
+            </div>
+            <div>
+              <img
+                src="../assets/svg/clients/logo-1.svg"
+                alt="client 2"
+                class="max-w-[114px] max-h-[44px] object-contain"
+              />
+            </div>
+            <div>
+              <img
+                src="../assets/svg/clients/logo-2.svg"
+                alt="client 3"
+                class="max-w-[114px] max-h-[44px] object-contain"
+              />
+            </div>
+            <div>
+              <img
+                src="../assets/svg/clients/logo-3.svg"
+                alt="client 4"
+                class="max-w-[114px] max-h-[44px] object-contain"
+              />
+            </div>
+            <div class="justify-self-end tablet:col-span-2 desktop:col-span-1">
+              <img
+                src="../assets/svg/clients/logo-4.svg"
+                alt="client 5"
+                class="max-w-[114px] max-h-[44px] object-contain"
+              />
+            </div>
+            <div
+              class="justify-self-start tablet:col-span-2 desktop:col-span-1"
+            >
+              <img
+                src="../assets/svg/clients/logo-5.svg"
+                alt="client 6"
+                class="max-w-[114px] max-h-[44px] object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="border-t border-[#E9E9E9] mx-4 tablet:mx-10"></div>
+
       <!-- Benefits Section  -->
-      <section class="my-[50px]">
+      <section class="py-[50px]">
         <div>
           <h1
             class="font-roboto-mono font-normal text-[10.5px] leading-[140%] tracking-[-.03em] text-[#485C11]"
@@ -248,14 +265,16 @@
         </div>
       </section>
 
-      <div class="border-t border-[#929292] px-0 tablet:mx-10 desktop:hidden"></div>
+      <div
+        class="border-t border-[#E9E9E9] px-0 tablet:mx-10 desktop:hidden"
+      ></div>
 
       <!-- See the big Picture Section-->
       <section class="desktop:mb-[120px]">
         <div
           class="*:text-left grid grod-cols-1 desktop:grid-cols-2 desktop:gap-5 *:"
         >
-          <div class="desktop:border-t desktop:border-[#929292]">
+          <div class="desktop:border-t desktop:border-[#E9E9E9]">
             <h1
               class="font-crimson-text font-normal text-[50px] leading-[95%] tracking-[-.03em] mt-[60px] text-headline"
             >
@@ -264,9 +283,8 @@
             <p
               class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] my-10 text-paragraph"
             >
-              Area turns your data into clear, vibrant 
-              visuals that show you exactly what's 
-              happening in each region.
+              Area turns your data into clear, vibrant visuals that show you
+              exactly what's happening in each region.
             </p>
 
             <div
