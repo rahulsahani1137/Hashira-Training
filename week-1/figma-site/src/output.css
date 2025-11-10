@@ -570,8 +570,20 @@ video {
   left: 147px;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
 .m-\[13\.9px\] {
   margin: 13.9px;
+}
+
+.m-\[50px\] {
+  margin: 50px;
 }
 
 .-mx-\[20px\] {
@@ -1037,8 +1049,42 @@ video {
   border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
 }
 
+.translate-x-\[\] {
+  --tw-translate-x: ;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[5-\%\] {
+  --tw-translate-x: 5-%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[50\%\] {
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-1\/2 {
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.scroll-mt-56 {
+  scroll-margin-top: 14rem;
 }
 
 .grid-cols-1 {
@@ -1140,6 +1186,10 @@ video {
 
 .gap-y-\[20px\] {
   row-gap: 20px;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .self-stretch {
@@ -1554,6 +1604,10 @@ video {
 
 .pt-\[42px\] {
   padding-top: 42px;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .text-left {
@@ -2045,6 +2099,10 @@ video {
     height: 459px;
   }
 
+  .tablet\:h-\[664\.2px\] {
+    height: 664.2px;
+  }
+
   .tablet\:w-\[238\.5px\] {
     width: 238.5px;
   }
@@ -2200,8 +2258,16 @@ video {
     line-height: 80%;
   }
 
+  .tablet\:leading-\[110\%\] {
+    line-height: 110%;
+  }
+
   .tablet\:tracking-\[-0\.05em\] {
     letter-spacing: -0.05em;
+  }
+
+  .tablet\:tracking-\[-0\.04em\] {
+    letter-spacing: -0.04em;
   }
 
   .\*\:tablet\:mx-10 > * {
@@ -2239,6 +2305,14 @@ video {
 
   .desktop\:-mt-\[141px\] {
     margin-top: -141px;
+  }
+
+  .desktop\:mb-\[20px\] {
+    margin-bottom: 20px;
+  }
+
+  .desktop\:mt-\[139\.69px\] {
+    margin-top: 139.69px;
   }
 
   .desktop\:block {
@@ -2285,6 +2359,14 @@ video {
     height: 634px;
   }
 
+  .desktop\:h-\[294px\] {
+    height: 294px;
+  }
+
+  .desktop\:h-\[664\.2px\] {
+    height: 664.2px;
+  }
+
   .desktop\:w-\[1200px\] {
     width: 1200px;
   }
@@ -2311,6 +2393,14 @@ video {
 
   .desktop\:w-\[869px\] {
     width: 869px;
+  }
+
+  .desktop\:w-\[540px\] {
+    width: 540px;
+  }
+
+  .desktop\:w-\[590px\] {
+    width: 590px;
   }
 
   .desktop\:min-w-\[400px\] {
@@ -2345,6 +2435,10 @@ video {
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
 
+  .desktop\:flex-col {
+    flex-direction: column;
+  }
+
   .desktop\:gap-5 {
     gap: 1.25rem;
   }
@@ -2369,6 +2463,10 @@ video {
   .desktop\:border-\[\#E9E9E9\] {
     --tw-border-opacity: 1;
     border-color: rgb(233 233 233 / var(--tw-border-opacity, 1));
+  }
+
+  .desktop\:border-\[\#\] {
+    border-color: #;
   }
 
   .desktop\:px-\[30px\] {
@@ -2406,5 +2504,25 @@ video {
 
   .desktop\:leading-\[16\.80px\] {
     line-height: 16.80px;
+  }
+
+  .desktop\:leading-\[105\%\] {
+    line-height: 105%;
+  }
+
+  .desktop\:leading-\[140\%\] {
+    line-height: 140%;
+  }
+
+  .desktop\:tracking-\[-0\.005em\] {
+    letter-spacing: -0.005em;
+  }
+
+  .desktop\:tracking-\[-0\.01em\] {
+    letter-spacing: -0.01em;
+  }
+
+  .desktop\:tracking-\[-0\.04em\] {
+    letter-spacing: -0.04em;
   }
 }

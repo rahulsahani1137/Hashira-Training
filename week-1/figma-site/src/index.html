@@ -12,7 +12,10 @@
     >
       <!-- Navigation Menu -->
       <!-- Navigation Bar -->
-      <nav id="navbar" class="h-[106px] tablet:h-[148px] px-0 tablet:px-0">
+      <nav
+        id="navbar"
+        class="relative h-[106px] tablet:h-[148px] px-0 tablet:px-0"
+      >
         <div
           class="tablet:hidden h-[78px] rounded-b-[20px] shadow-md flex justify-between items-center p-[20px]"
         >
@@ -26,15 +29,19 @@
         </div>
 
         <div class="hidden tablet:flex justify-between items-center h-[148px]">
-          <div class="font-dm-sans text-center font-medium text-[30px] tracking-[-0.05em] leading-[120%]">Area</div>
+          <div
+            class="font-dm-sans text-center font-medium text-[30px] tracking-[-0.05em] leading-[120%]"
+          >
+            Area
+          </div>
 
           <div
-            class="font-dm-sans font-bold flex justify-center items-center *:text-[14px] gap-[27px] *:leading-[140%] *:tracking-[-0.025em] *:text-[#000000] rounded-full mx-auto"
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-dm-sans font-bold flex justify-center items-center *:text-[14px] gap-[27px] *:leading-[140%] *:tracking-[-0.025em] *:text-[#000000] rounded-full"
           >
-            <a href="/benfits">Benefits</a>
-            <a href="/spec">Specifications</a>
-            <a href="/how-to">How-to</a>
-            <a href="/contact-us">Contact-us</a>
+            <a href="/benfits" target="_blank">Benefits</a>
+            <a href="/spec" target="_blank">Specifications</a>
+            <a href="/how-to" target="_blank">How-to</a>
+            <a href="/contact-us" target="_blank">Contact-us</a>
           </div>
 
           <div class="flex justify-end">
@@ -710,34 +717,165 @@
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="h-[909px] tablet:h-[1256px] mx-[16px] tablet:mx-[40px]">
+      <!-- Testimonial Section -->
+      <section
+        class="grid grid-col-1 tablet:grid-cols-2 gap-5 items-center mb-[40px] tablet:mb-[40px]"
+      >
+        <img
+          src="../assets/images/scene-three.png"
+          alt="scene1"
+          class="w-[343px] h-[343.0000305175781px] tablet:w-[720px] tablet:h-[720px] desktop:w-[590px] desktop:h-[669.3818359375px] object-cover rounded-[30px]"
+        />
+        <div
+          class="desktop:h-[669.3818359375px] desktop:w-[590px] desktop:border-t desktop:border-[#E9E9E9]"
+        >
           <div
-            class="flex justify-center items-center mb-[40px] tablet:mb-[40px] desktop:mb-"
+            class="desktop:w-[540px] desktop:h-[294px] desktop:mt-[139.69px] m-[50px]"
           >
-            <img
-              src="../assets/images/scene-three.png"
-              alt="scene1"
-              class="w-[343px] h-[343.0000305175781px] tablet:w-[720px] tablet:h-[720px] desktop:w-[1200px] desktop:h-[669.3818359375px] object-cover rounded-[30px]"
-            />
-          </div>
-          <div>
             <p
-              class="font-crimson-text text-[32px] tablet:text-[40px] leading-[90%] tracking-[-0.03em] text-left border-t pt-[40px]"
+              class="font-crimson-text text-[32px] tablet:text-[40px] leading-[90%] tablet:leading-[110%] tracking-[-0.03em] tablet:tracking-[-0.04em] text-left pt-[40px] desktop:leading-[105%] desktop:tracking-[-0.04em]"
             >
               “I was skeptical, but Area has completely transformed the way I
               manage my business. The data visualizations are so clear and
               intuitive, and the platform is so easy to use. I can't imagine
               running my company without it.”
             </p>
-
-            <div class="flex items-baseline gap-[9px] mt-[50px] px-[16px]">
-              <p class="text-[15px]">John Smith</p>
-              <p class="text-[10.5px] tablet:text-[11px]">Head of Data</p>
+            <div
+              class="flex desktop:flex-col items-baseline gap-[9px] mt-[50px]"
+            >
+              <p
+                class="text-[15px] desktop:leading-[140%] desktop:tracking-[-0.005em]"
+              >
+                John Smith
+              </p>
+              <p
+                class="font-roboto-mono text-[10.5px] tablet:text-[11px] desktop:text-[12px] desktop:leading-[140%] desktop:tracking-[-0.01em] text-[#485C11]"
+              >
+                Head of Data
+              </p>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Call to Action Section -->
+      <section
+        class="border-t h-[700px] pb-[100px] pt-[80px] tablet:h-[650px] desktop:h-[634px]"
+      >
+        <div class="h-[135px] desktop:h-[54px]">
+          <div class="tablet:w-full tablet:flex justify-between items-center">
+            <h4
+              class="text-[45px] font-crimson-text leading-[95%] tracking-[-0.03em] text-nowrap"
+            >
+              Map Your Success
+            </h4>
+            <button
+              class="py-[14px] px-[22px] bg-[#DFECC6] rounded-[1000px] font-dm-sans text-[14px] text-bold"
+            >
+              Discover More
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="h-[305px] mt-[100px] flex gap-[20px] overflow-x-auto desktop:h-[300px] desktop:w-full"
+        >
+          <div class="flex-shrink-0 border-t">
+            <h1
+              class="font-dm-sans text-[64px] desktop:text-[80px] mt-[60px] text-[#929292] w-[240px] desktop:w-[386.6666564941406px]"
+            >
+              01
+            </h1>
+            <div class="w-[210px] desktop:w-[386.66668701171875px]">
+              <h3 class="text-[18px] font-crimson-text desktop:mb-[20px]">
+                Get Started
+              </h3>
+              <p class="font-dm-sans text-[#6F6F6F] text-[15px]">
+                With our intuitive setup, you're up and running in minutes.
+              </p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 border-t">
+            <h1
+              class="font-dm-sans text-[64px] desktop:text-[80px] mt-[60px] text-[#929292] w-[240px] desktop:w-[386.6666564941406px]"
+            >
+              02
+            </h1>
+            <div class="w-[210px] desktop:w-[386.66668701171875px]">
+              <h3 class="text-[18px] font-crimson-text desktop:mb-[20px]">
+                Customize and Configure
+              </h3>
+              <p class="font-dm-sans text-[#6F6F6F] text-[15px] leading-[140%]">
+                Adapt Area to your specific requirements and preferences.
+              </p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 border-t">
+            <h1
+              class="font-dm-sans text-[64px] desktop:text-[80px] mt-[60px] text-[#929292] w-[240px] desktop:w-[386.6666564941406px]"
+            >
+              03
+            </h1>
+            <div class="w-[210px] desktop:w-[386.66668701171875px]">
+              <h3 class="text-[18px] font-crimson-text desktop:mb-[20px]">
+                Grow Your Business
+              </h3>
+              <p class="font-dm-sans text-[#6F6F6F] text-[15px]">
+                Make informed decisions to exceed your goals.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        
+      </section>
+      
+      <div class="flex justify-center items-center">
+          <img
+            src="../assets/images/scene-four.png"
+            alt="scene2"
+            class="w-[343px] h-[600px] tablet:w-[720px] tablet:h-[664.2px] desktop:w-[1200px] desktop:h-[664.2px] object-cover rounded-[30px]"
+          />
+        </div>
+      
+      <!-- Footer Section -->
+      <footer class="h-[324px] tablet:h-[250px] desktop:w-full pb-5">
+        <div
+          class="h-[114px] tablet:h-[40px] w-full mt-[40px] font-dm-sans text-[14px] font-bold tablet:flex gap-[27px]"
+        >
+          <h4 class="mb-[27px]">Benefits</h4>
+          <h4 class="mb-[27px]">Specifications</h4>
+          <h4>How-to</h4>
+        </div>
+        <div
+          class="h-[70px] flex justify-between items-baseline mt-[80px] text-[#485C11] mb-[20px]"
+        >
+          <div>
+            <svg
+              width="32"
+              height="70"
+              viewBox="0 0 32 70"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.3379 21.5869L31.751 32.6748L27.9258 35.9121L22.3379 29.3125V45H24.8379V70H19.8379V45H17.3379V15H22.3379V21.5869ZM12.4248 44.999L7.83789 69.999H2.75L7.33789 44.999H12.4248ZM4.6748 35.8877L0 34.1123L7.22461 15H12.5752L4.6748 35.8877ZM17.3389 9.9502H12.3389V0H17.3389V9.9502Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <div
+            class="flex tablet:w-[484.2491760253906px] desktop:w-[953.2491455078125px] tablet:text-[11px]"
+          >
+            <p class="">© Area.</p>
+            <p class="ml-[16px]">2025</p>
+          </div>
+          <div><p class="tablet:text-[11px]">All Rights Reserved</p></div>
+        </div>
+      </footer>
+      
     </div>
   </body>
 </html>
