@@ -8,7 +8,7 @@
   </head>
   <body>
     <div
-      class="max-w-[375px] tablet:max-w-[800px] desktop:max-w-[1200px] flex flex-col mx-auto px-4 tablet:px-10"
+      class="max-w-[375px] tablet:max-w-[800px] desktop:max-w-[1200px] flex flex-col mx-auto *:px-4 *:tablet:px-10"
     >
       <!-- Navigation Menu -->
       <!-- Navigation Bar -->
@@ -84,7 +84,7 @@
             </div>
             <div class="mb-[50px]">
               <div
-                class="min-h-[81.8px] grid grid-cols-2 tablet:grid-cols-4 desktop:grid-cols-6 justify-items-center items-center gap-x-[30px] gap-y-[20px] tablet:gap-x-[60px] tablet:gap-y-[20px]"
+                class="min-h-[81.8px] grid grid-cols-2 tablet:grid-cols-4 desktop:grid-cols-6 justify-items-center items-center gap-x-[30px] gap-y-[20px] tablet:gap-x-[60px]"
               >
                 <div class="flex justify-center items-center h-[81.8px]">
                   <img
@@ -235,14 +235,120 @@
             </p>
           </div>
         </div>
+
+        <!-- Component Bottom Image -->
+        <div
+          class="flex justify-center items-center mb-[100px] tablet:mb-[120px]"
+        >
+          <img
+            src="../assets/images/scene-one.png"
+            alt="scene1"
+            class="w-[343px] h-[600px] tablet:w-[720px] tablet:h-[600px] desktop:w-[1200px] desktop:h-[620px] object-cover rounded-[30px]"
+          />
+        </div>
       </section>
 
-      <!-- Specs Section  -->
-      <section>
+      <div class="border-t border-[#929292] px-0 tablet:mx-10 desktop:hidden"></div>
+
+      <!-- See the big Picture Section-->
+      <section class="desktop:mb-[120px]">
+        <div
+          class="*:text-left grid grod-cols-1 desktop:grid-cols-2 desktop:gap-5 *:"
+        >
+          <div class="desktop:border-t desktop:border-[#929292]">
+            <h1
+              class="font-crimson-text font-normal text-[50px] leading-[95%] tracking-[-.03em] mt-[60px] text-headline"
+            >
+              See the Big Picture
+            </h1>
+            <p
+              class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] my-10 text-paragraph"
+            >
+              Area turns your data into clear, vibrant 
+              visuals that show you exactly what's 
+              happening in each region.
+            </p>
+
+            <div
+              class="*:py-5 *:flex tablet:*:items-center *:justify-start *:gap-[30px] *:border-t *:border-divider"
+            >
+              <div>
+                <p
+                  class="text-paragraph font-dm-sans font-bold text-[15px] leading-[140%] tracking-[-0.005em]"
+                >
+                  01
+                </p>
+                <div
+                  class="font-dm-sans font-normal text-[15px] leading-[140%] text-headline tracking-[-0.005em]"
+                >
+                  Spot Trends in Seconds: No more digging through numbers.
+                </div>
+              </div>
+              <div>
+                <p
+                  class="text-paragraph font-dm-sans font-bold text-[15px] leading-[140%] tracking-[-0.005em]"
+                >
+                  02
+                </p>
+                <div
+                  class="font-dm-sans font-normal text-[15px] leading-[140%] text-headline tracking-[-0.005em]"
+                >
+                  Get Everyone on the Same Page: Share easy-to-understand
+                  reports with your team.
+                </div>
+              </div>
+              <div>
+                <p
+                  class="text-paragraph font-dm-sans font-bold text-[15px] leading-[140%] tracking-[-0.005em]"
+                >
+                  03
+                </p>
+                <div
+                  class="font-dm-sans font-normal text-[15px] leading-[140%] text-headline tracking-[-0.005em]"
+                >
+                  Make Presentations Pop: Interactive maps and dashboards keep
+                  your audience engaged.
+                </div>
+              </div>
+              <div>
+                <p
+                  class="text-paragraph font-dm-sans font-bold text-[15px] leading-[140%] tracking-[-0.005em]"
+                >
+                  04
+                </p>
+                <div
+                  class="font-dm-sans font-normal text-[15px] leading-[140%] text-headline tracking-[-0.005em]"
+                >
+                  Your Global Snapshot: Get a quick, clear overview of your
+                  entire operation.
+                </div>
+              </div>
+              <button
+                class="px-[22px] py-[14px] rounded-full bg-accent-secondary font-dm-sans text-base leading-[140%] tracking-[-0.0025em] font-bold text-[14px] text-center justify-start flex mt-10"
+              >
+                Discover More
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex justify-center items-center mb-[100px] tablet:mb-[120px] my-20 desktop:my-0"
+          >
+            <img
+              src="../assets/images/scene-two.png"
+              alt="scene1"
+              class="w-[343px] h-[600px] tablet:w-[720px] tablet:h-[600px] desktop:w-[1200px] desktop:h-[620px] object-cover rounded-[30px]"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Specifications Section  -->
+      <section class="border-t border-divider">
         <!-- Why Choose Area Section -->
         <div class="*:text-center flex flex-col my-20">
           <p
-            class="font-roboto-mono font-normal text-[10.5px] leading-[140%] tracking-[-.03em] mb-[30px] text-[#485C11]"
+            class="font-roboto-mono font-normal text-[11px] leading-[140%] tracking-[-.001em] mb-[40px] text-accent-primary"
           >
             Specs
           </p>
@@ -255,10 +361,11 @@
             class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] my-[30px] text-paragraph text-center"
           >
             You need a solution that keeps up. That’s why we developed Area. A
-            developer-friendly approach to streamline your business.
+            developer-friendly approach to <br />
+            streamline your business.
           </p>
           <button
-            class="px-[22px] py-[14px] gap-[10px] rounded-full bg-accent-secondary font-dm-sans text-red-600 text-base leading-[20px] tracking-[-0.005em] font-medium mx-auto"
+            class="px-[22px] py-[14px] rounded-full bg-accent-secondary font-dm-sans text-base leading-[140%] tracking-[-0.0025em] font-bold text-[14px] text-center justify-start flex mx-auto"
           >
             Discover More
           </button>
@@ -323,6 +430,36 @@
                 class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
               >
                 Seamless integration
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <img
+                src="../assets/svg/icons/check-icon.svg"
+                alt=""
+                class="size-[14px]"
+              />
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Full UTF-8 support
+              </div>
+            </div>
+
+            <div
+              class="self-stretch px-5 tablet:px-[30px] desktop:px-[30px] py-8 border-b-[0.5px] border-[#E9E9E9] flex justify-start items-center gap-2"
+            >
+              <img
+                src="../assets/svg/icons/check-icon.svg"
+                alt=""
+                class="size-[14px]"
+              />
+              <div
+                class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
+              >
+                Full UTF-8 support
               </div>
             </div>
 
@@ -555,6 +692,7 @@
             </div>
           </div>
         </div>
+
         <div class="h-[909px] tablet:h-[1256px] mx-[16px] tablet:mx-[40px]">
           <div
             class="flex justify-center items-center mb-[40px] tablet:mb-[40px] desktop:mb-"
