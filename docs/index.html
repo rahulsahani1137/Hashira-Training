@@ -46,21 +46,23 @@
 
           <div class="flex justify-end">
             <button
-              class="bg-[#485C11] hover:bg-[#8E9C78] transition-all duration-700 ease-in-out text-[#fff] px-[22px] py-[14px] text-[14px] leading-[140%] tracking-[-0.025em] font-bold text-center flex justify-center items-center font-dm-sans rounded-full gap-0.5 "
+              class="bg-[#485C11] hover:bg-[#8E9C78] transition-all duration-700 ease-in-out text-[#fff] px-[22px] py-[14px] text-[14px] leading-[140%] tracking-[-0.025em] font-bold text-center flex justify-center items-center font-dm-sans rounded-full gap-0.5 group"
             >
               Learn More
-              <svg
-                width="7"
-                height="20"
-                viewBox="0 0 7 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.01037 11.9875V8.04598L5.64939 8.08556L0.735155 13.0055L0 12.2703L4.91423 7.35606L4.96513 7.99508H1.0066V6.99414L6 7.00545V11.9875H5.01037Z"
-                  fill="white"
-                />
-              </svg>
+              <div class="transition-transform duration-300 ease-in-out transform group-hover:-translate-y-2">
+                <svg
+                  width="7"
+                  height="20"
+                  viewBox="0 0 7 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.01037 11.9875V8.04598L5.64939 8.08556L0.735155 13.0055L0 12.2703L4.91423 7.35606L4.96513 7.99508H1.0066V6.99414L6 7.00545V11.9875H5.01037Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
             </button>
           </div>
         </div>
@@ -765,7 +767,9 @@
         class="border-t border-divider h-[700px] pb-[100px] pt-[80px] tablet:h-[650px] desktop:h-[634px]"
       >
         <div class="">
-          <div class="tablet:w-full tablet:flex flex justify-between items-center">
+          <div
+            class="tablet:w-full tablet:flex flex justify-between items-center"
+          >
             <h4
               class="text-[45px] font-crimson-text leading-[95%] tracking-[-0.03em]"
             >
@@ -880,21 +884,25 @@
         </div>
         <div class="mt-[40px] w-full flex justify-center items-center">
           <div
-            class="py-[14px] px-[22px] bg-[#485C11] rounded-[1000px] w-[343px] tablet:w-[520px] desktop:w-[600px] text-[#fff] font-bold font-dm-sans text-[14px] flex items-center justify-center gap-1 cursor-pointer hover:bg-[#8E9C78] transition-all duration-700 ease-in-out"
+            class="py-[14px] px-[22px] bg-[#485C11] rounded-[1000px] w-[343px] tablet:w-[520px] desktop:w-[600px] text-[#fff] font-bold font-dm-sans text-[14px] flex items-center justify-center gap-1 cursor-pointer hover:bg-[#8E9C78] transition-all duration-700 ease-in-out group"
           >
             Learn More
-            <svg
-              width="6"
-              height="7"
-              viewBox="0 0 6 7"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="transition-transform duration-300 ease-in-out transform group-hover:-translate-y-2"
             >
-              <path
-                d="M5.01037 4.9934V1.05184L5.64939 1.09142L0.735155 6.01131L0 5.27615L4.91423 0.361923L4.96513 1.00094H1.0066V0L6 0.0113101V4.9934H5.01037Z"
-                fill="white"
-              />
-            </svg>
+              <svg
+                width="6"
+                height="7"
+                viewBox="0 0 6 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.01037 4.9934V1.05184L5.64939 1.09142L0.735155 6.01131L0 5.27615L4.91423 0.361923L4.96513 1.00094H1.0066V0L6 0.0113101V4.9934H5.01037Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
           </div>
         </div>
         <div class="mt-[120px] border-b border-divider"></div>
