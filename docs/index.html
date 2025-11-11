@@ -16,9 +16,10 @@
         <div
           class="tablet:hidden h-[78px] rounded-b-[20px] shadow-md flex justify-between items-center p-[20px]"
         >
-          <div>
-            <div class="text-[30px]">Area</div>
-          </div>
+          <span
+            class="font-dm-sans font-medium text-[30px] leading-[120%] tracking-[-0.05em] align-middle"
+            >Area</span
+          >
 
           <div class="cursor-pointer" ref="hamburger-menu">
             <img src="./assets/svg/icons/menu-icon.svg" alt="" />
@@ -36,7 +37,7 @@
             class="w-[399px] h-[60px] flex fixed left-[200px] right-[200px] top-[16px] justify-center items-center font-bold text-[14px] gap-[27px] rounded-full mx-auto z-50 bg-[#fff]/45 backdrop-blur-lg bg-blend-normal"
           >
             <a href="#benefits">Benefits</a>
-            <a href="#specifications" >Specifications</a>
+            <a href="#specifications">Specifications</a>
             <a href="#how-to">How-to</a>
             <a href="#contact-us">Contact-us</a>
           </div>
@@ -783,7 +784,7 @@
         </div>
 
         <div
-          class="mt-20 flex gap-5 overflow-x-auto *:border-t *:border-divider *:w-[240px] *:tablet:w-[240px] *:desktop:w-[386.6px] w-[720px] tablet:w-full"
+          class="mt-20 flex gap-5 max-w-[343px] tablet:max-w-full overflow-x-auto *:border-t *:border-divider *:min-w-[240px] *:tablet:w-[240px] *:desktop:w-[386.6px] tablet:w-full"
         >
           <!-- Process 01  -->
           <div>
@@ -907,17 +908,17 @@
 
       <!-- Footer Section -->
       <footer class="tablet:min-h-[250px] desktop:w-full pb-5">
+        <!-- Footer Redirect Links -->
         <div
-          class="h-[114px] tablet:h-[40px] w-full mt-[40px] font-dm-sans text-[14px] font-bold tablet:flex gap-[27px]"
+          class="*:font-dm-sans *:font-bold *:text-[14px] *:leading-[140%] *:tracking-[-0.025em] flex flex-col tablet:flex-row gap-[27px] *:text-[#000] *:py-[10px] mt-10 mb-20"
         >
-          <h4 class="mb-[27px]">Benefits</h4>
-          <h4 class="mb-[27px]">Specifications</h4>
-          <h4>How-to</h4>
+          <a href="#benefits" class="">Benefits</a>
+          <a href="#specifications" class="">Specifications</a>
+          <a href="#how-to">How-to</a>
         </div>
-        <div
-          class="h-[70px] flex justify-between items-baseline mt-[80px] text-[#485C11] mb-[20px]"
-        >
-          <div>
+        <div class="flex items-end justify-between">
+          <!-- Company Footer Logo -->
+          <div class="w-[31.75px] h-[70px]">
             <svg
               width="32"
               height="70"
@@ -931,13 +932,29 @@
               />
             </svg>
           </div>
+
+          <!-- Copyright Year  -->
           <div
-            class="flex tablet:w-[484.2491760253906px] desktop:w-[953.2491455078125px] tablet:text-[11px]"
+            class="flex w-[116.25px] tablet:w-[484.25px] desktop:w-[953.25px] "
           >
-            <p class="">© Area.</p>
-            <p class="ml-[16px]">2025</p>
+            <span
+              class="font-normal font-roboto-mono text-[11px] leading-[140%] tracking-[-0.01em] align-middle"
+              >© Area.</span
+            >
+            <span
+              class="font-normal font-roboto-mono text-[11px] leading-[140%] tracking-[-0.01em] align-middle"
+              >2025</span
+            >
           </div>
-          <div><p class="tablet:text-[11px]">All Rights Reserved</p></div>
+
+          <!-- Rights Policy -->
+          <div>
+            <span
+              class="font-normal font-roboto-mono text-[11px] leading-[140%] tracking-[-0.01em] align-middle"
+            >
+              All Rights Reserved
+            </span>
+          </div>
         </div>
       </footer>
     </div>
