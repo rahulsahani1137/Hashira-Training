@@ -12,10 +12,7 @@
     >
       <!-- Navigation Menu -->
       <!-- Navigation Bar -->
-      <nav
-        id="navbar"
-        class="relative h-[106px] tablet:h-[148px] px-0 tablet:px-0"
-      >
+      <nav id="navigation" class="h-[106px] tablet:h-[148px] px-0 tablet:px-0">
         <div
           class="tablet:hidden h-[78px] rounded-b-[20px] shadow-md flex justify-between items-center p-[20px]"
         >
@@ -28,15 +25,15 @@
           </div>
         </div>
 
-        <div class="hidden tablet:flex justify-between items-center h-[148px] bg-white">
+        <div class="hidden tablet:flex justify-between h-[148px] bg-white">
           <div
-            class="font-dm-sans text-center font-medium text-[30px] tracking-[-0.05em] leading-[120%]"
+            class="font-dm-sans text-center font-medium mt-[20px] text-[30px] tracking-[-0.05em] leading-[120%]"
           >
             Area
           </div>
 
           <div
-            class="w-[399px] h-[60px] flex fixed left-[200px] right-[200px] top-[48px] justify-center items-center font-bold text-[14px] gap-[27px] rounded-full mx-auto z-50 bg-[#fff]/45 backdrop-blur-lg bg-blend-normal "
+            class="w-[399px] h-[60px] flex fixed left-[200px] right-[200px] top-[16px] justify-center items-center font-bold text-[14px] gap-[27px] rounded-full mx-auto z-50 bg-[#fff]/45 backdrop-blur-lg bg-blend-normal"
           >
             <a href="/benfits" target="_blank">Benefits</a>
             <a href="/spec" target="_blank">Specifications</a>
@@ -46,10 +43,12 @@
 
           <div class="flex justify-end">
             <button
-              class="bg-[#485C11] hover:bg-[#8E9C78] transition-all duration-700 ease-in-out text-[#fff] px-[22px] py-[14px] text-[14px] leading-[140%] tracking-[-0.025em] font-bold text-center flex justify-center items-center font-dm-sans rounded-full gap-0.5 group"
+              class="bg-[#485C11] hover:bg-[#8E9C78] transition-all duration-700 ease-in-out text-[#fff] px-[22px] py-[14px] text-[14px] leading-[140%] tracking-[-0.025em] font-bold text-center flex justify-center items-center font-dm-sans rounded-full gap-0.5 group max-h-[48px] mt-5"
             >
               Learn More
-              <div class="transition-transform duration-300 ease-in-out transform group-hover:-translate-y-2">
+              <div
+                class="transition-transform duration-300 ease-in-out transform group-hover:-translate-y-2"
+              >
                 <svg
                   width="7"
                   height="20"
@@ -98,7 +97,7 @@
               <img
                 src="./assets/images/hero/desktop.png"
                 alt="mobile hero image"
-                class="tablet:w-[676.5px] desktop:w-[869px] border-black tablet:border-t-[13.9px] tablet:border-x-[13.9px] desktop:border-t-[10.9px] border-x-[10.9px] rounded-t-[38px]"
+                class="tablet:w-[676.5px] desktop:w-[869px] border-black tablet:border-t-[13.9px] tablet:border-x-[13.9px] desktop:border-t-[18.5px] desktop:border-x-[18.63px] rounded-t-[38px]"
               />
             </div>
           </div>
@@ -274,6 +273,7 @@
         </div>
       </section>
 
+      <!-- Border -->
       <div
         class="border-t border-[#E9E9E9] px-0 tablet:mx-10 desktop:hidden"
       ></div>
@@ -762,40 +762,39 @@
         </div>
       </section>
 
+      <!-- Border  -->
+      <div class="border-t border-[#E9E9E9] px-0 tablet:mx-10"></div>
+
       <!-- Call to Action Section -->
-      <section
-        class="border-t border-divider h-[700px] pb-[100px] pt-[80px] tablet:h-[650px] desktop:h-[634px]"
-      >
-        <div class="">
-          <div
-            class="tablet:w-full tablet:flex flex justify-between items-center"
+      <section class="pb-[100px] pt-[80px]">
+        <div
+          class="flex flex-col items-center justify-between w-full tablet:flex-row tablet:w-full tablet:flex"
+        >
+          <h1
+            class="text-[50px] tablet:text-[54px] desktop:text-[60px] font-crimson-text leading-[95%] font-normal tracking-[-0.03em] text-left tablet:self-center"
           >
-            <h4
-              class="text-[45px] font-crimson-text leading-[95%] tracking-[-0.03em]"
-            >
-              Map Your Success
-            </h4>
-            <button
-              class="px-[22px] py-[14px] rounded-full hover:bg-[#8E9C78] hover:text-[#fff] transition-all duration-700 bg-accent-secondary font-dm-sans text-base leading-[140%] tracking-[-0.0025em] font-bold text-[14px] text-center justify-self-center justify-end flex mt-10 tablet:mt-0"
-            >
-              Discover More
-            </button>
-          </div>
+            Map Your Success
+          </h1>
+          <button
+            class="max-h-[48px] px-[22px] py-[14px] rounded-full hover:bg-[#8E9C78] hover:text-[#fff] transition-all duration-700 bg-accent-secondary font-dm-sans text-base leading-[140%] tracking-[-0.0025em] font-bold text-[14px] text-center justify-self-center justify-end flex mt-10 tablet:mt-0 self-start tablet:self-center"
+          >
+            Discover More
+          </button>
         </div>
 
         <div
-          class="mt-20 flex gap-5 overflow-x-auto *:border-t *:border-divider *:min-w-[240px] *:tablet:w-[240px] *:desktop:w-[386.6px] w-full"
+          class="mt-20 flex gap-5 overflow-x-auto *:border-t *:border-divider *:w-[240px] *:tablet:w-[240px] *:desktop:w-[386.6px] w-[720px] tablet:w-full"
         >
           <!-- Process 01  -->
           <div>
             <h1
-              class="font-dm-sans text-[64px] tablet:text-[80px] desktop:text-[80px] pt-[60px] text-[#929292]"
+              class="font-dm-sans font-normal text-[64px] tablet:text-[80px] desktop:text-[80px] my-[60px] leading-[100%] tracking-[-0.04em] text-[#929292]"
             >
               01
             </h1>
-            <div>
+            <span>
               <h3
-                class="text-[18px] font-crimson-text pb-[20px] tracking-[0.03em]"
+                class="text-[18px] font-crimson-text pb-[20px] tracking-[-0.03em] leading-[100%]"
               >
                 Get Started
               </h3>
@@ -805,57 +804,55 @@
                 With our intuitive setup, you're <br />
                 up and running in minutes.
               </p>
-            </div>
+            </span>
           </div>
 
           <!-- Process 02  -->
           <div>
             <h1
-              class="font-dm-sans text-[64px] tablet:text-[80px] desktop:text-[80px] pt-[60px] text-[#929292]"
+              class="font-dm-sans font-normal text-[64px] tablet:text-[80px] desktop:text-[80px] my-[60px] leading-[100%] tracking-[-0.04em] text-[#929292]"
             >
               02
             </h1>
-            <div>
+            <span>
               <h3
-                class="text-[18px] font-crimson-text pb-[20px] tracking-[0.03em]"
+                class="text-[18px] font-crimson-text pb-[20px] tracking-[-0.03em] leading-[100%]"
               >
                 Customize and Configure
               </h3>
               <p
                 class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]"
               >
-                Adapt Area to your specific<br />
-                requirements and <br />preferences.
+                Adapt Area to your specific requirements and preferences.
               </p>
-            </div>
+            </span>
           </div>
 
           <!-- Process 03  -->
           <div>
             <h1
-              class="font-dm-sans text-[64px] tablet:text-[80px] desktop:text-[80px] pt-[60px] text-[#929292]"
+              class="font-dm-sans font-normal text-[64px] tablet:text-[80px] desktop:text-[80px] my-[60px] leading-[100%] tracking-[-0.04em] text-[#929292]"
             >
               03
             </h1>
-            <div class="w-[210px] desktop:w-[386.6px]">
+            <span>
               <h3
-                class="text-[18px] font-crimson-text pb-[20px] tracking-[0.03em]"
+                class="text-[18px] font-crimson-text pb-[20px] tracking-[-0.03em] leading-[100%]"
               >
                 Grow Your Business
               </h3>
               <p
                 class="font-dm-sans font-normal text-[15px] leading-[140%] tracking-[-0.005em] text-[#6F6F6F]"
               >
-                Make informed decisions to <br />
-                exceed your goals.
+                Make informed decisions to exceed your goals.
               </p>
-            </div>
+            </span>
           </div>
         </div>
       </section>
 
       <!-- CTA Image  -->
-      <div class="flex justify-center items-center mb-10">
+      <div class="flex items-center justify-center mb-10">
         <img
           src="./assets/images/scene-four.png"
           alt="scene2"
@@ -866,7 +863,7 @@
       <!-- Contact Us Section  -->
       <section>
         <div class="mb-[120px] border-t border-divider"></div>
-        <div class="flex justify-center items-center">
+        <div class="flex items-center justify-center">
           <h1
             class="font-crimson-text text-[50px] leading-[95%] tracking-[-0.03em] whitespace-nowrap tablet:flex justify-center items-center tablet:text-[54px]"
           >
