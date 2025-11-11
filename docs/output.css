@@ -748,21 +748,6 @@ video {
   margin-bottom: 90px;
 }
 
-.my-\[\] {
-  margin-top: ;
-  margin-bottom: ;
-}
-
-.my-\[1\] {
-  margin-top: 1;
-  margin-bottom: 1;
-}
-
-.my-\[139\.69px\] {
-  margin-top: 139.69px;
-  margin-bottom: 139.69px;
-}
-
 .-mt-\[81px\] {
   margin-top: -81px;
 }
@@ -1002,6 +987,10 @@ video {
 
 .min-h-\[42px\] {
   min-height: 42px;
+}
+
+.min-h-\[48px\] {
+  min-height: 48px;
 }
 
 .min-h-\[81\.8px\] {
@@ -1626,6 +1615,10 @@ video {
   gap: 8px;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-x-\[30px\] {
   -moz-column-gap: 30px;
        column-gap: 30px;
@@ -2128,6 +2121,11 @@ video {
   border-color: rgb(233 233 233 / var(--tw-border-opacity, 1));
 }
 
+.border-t-divider {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(233 233 233 / var(--tw-border-opacity, 1));
+}
+
 .bg-\[\#485C11\] {
   --tw-bg-opacity: 1;
   background-color: rgb(72 92 17 / var(--tw-bg-opacity, 1));
@@ -2337,10 +2335,6 @@ video {
 
 .pt-\[80px\] {
   padding-top: 80px;
-}
-
-.pt-\[50px\] {
-  padding-top: 50px;
 }
 
 .text-left {
@@ -3191,23 +3185,9 @@ video {
     grid-column: span 2 / span 2;
   }
 
-  .tablet\:m-\[50px\] {
-    margin: 50px;
-  }
-
   .tablet\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
-  }
-
-  .tablet\:my-auto {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
-  .tablet\:my-\[139\.69px\] {
-    margin-top: 139.69px;
-    margin-bottom: 139.69px;
   }
 
   .tablet\:-mt-\[60px\] {
@@ -3220,14 +3200,6 @@ video {
 
   .tablet\:mt-0 {
     margin-top: 0px;
-  }
-
-  .tablet\:mr-\[50px\] {
-    margin-right: 50px;
-  }
-
-  .tablet\:ml-\[50px\] {
-    margin-left: 50px;
   }
 
   .tablet\:flex {
@@ -3308,10 +3280,6 @@ video {
 
   .tablet\:flex-row {
     flex-direction: row;
-  }
-
-  .tablet\:flex-col {
-    flex-direction: column;
   }
 
   .tablet\:gap-x-\[60px\] {
@@ -3417,10 +3385,6 @@ video {
 
   .desktop\:mb-\[120px\] {
     margin-bottom: 120px;
-  }
-
-  .desktop\:mt-\[139\.69px\] {
-    margin-top: 139.69px;
   }
 
   .desktop\:ml-\[50px\] {
@@ -3532,6 +3496,10 @@ video {
     border-top-width: 18.5px;
   }
 
+  .desktop\:border-t-0 {
+    border-top-width: 0px;
+  }
+
   .desktop\:border-\[\#E9E9E9\] {
     --tw-border-opacity: 1;
     border-color: rgb(233 233 233 / var(--tw-border-opacity, 1));
@@ -3572,10 +3540,6 @@ video {
 
   .desktop\:leading-\[16\.80px\] {
     line-height: 16.80px;
-  }
-
-  .desktop\:leading-\[\] {
-    line-height: ;
   }
 
   .desktop\:tracking-\[-0\.01em\] {

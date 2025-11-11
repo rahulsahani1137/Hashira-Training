@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Area</title>
     <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Joan&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div
@@ -13,6 +19,7 @@
       <!-- Navigation Menu -->
       <!-- Navigation Bar -->
       <nav id="navigation" class="h-[106px] tablet:h-[148px] px-0 tablet:px-0">
+        <!-- Mobile Nav  -->
         <div
           class="tablet:hidden h-[78px] rounded-b-[20px] shadow-md flex justify-between items-center p-[20px]"
         >
@@ -21,11 +28,24 @@
             >Area</span
           >
 
-          <div class="cursor-pointer" ref="hamburger-menu">
-            <img src="./assets/svg/icons/menu-icon.svg" alt="" />
-          </div>
+          <!-- Hamburger Icon -->
+          <button class="cursor-pointer" id="hamburger" onclick="toggleMenu()">
+            <img
+              id="open-icon"
+              src="./assets/svg/icons/menu-icon.svg"
+              alt="open"
+              class="block"
+            />
+            <img
+              id="close-icon"
+              class="hidden"
+              src="./assets/svg/icons/menu-close.svg"
+              alt="close"
+            />
+          </button>
         </div>
 
+        <!-- Tablet & Desktop Nav  -->
         <div class="hidden tablet:flex justify-between h-[148px] bg-white">
           <div
             class="font-dm-sans text-center font-medium mt-[20px] text-[30px] tracking-[-0.05em] leading-[120%]"
@@ -34,12 +54,13 @@
           </div>
 
           <div
-            class="w-[399px] h-[60px] flex fixed left-[200px] right-[200px] top-[16px] justify-center items-center font-bold text-[14px] gap-[27px] rounded-full mx-auto z-50 bg-[#fff]/45 backdrop-blur-lg bg-blend-normal"
+            id="menu"
+            class="show w-[399px] h-[60px] flex fixed left-[200px] right-[200px] top-[16px] justify-center items-center font-bold text-[14px] gap-[27px] rounded-full mx-auto z-50 bg-[#fff]/45 backdrop-blur-lg bg-blend-normal"
           >
-            <a href="#benefits">Benefits</a>
-            <a href="#specifications">Specifications</a>
-            <a href="#how-to">How-to</a>
-            <a href="#contact-us">Contact-us</a>
+            <a id="menu-item" href="#benefits">Benefits</a>
+            <a id="menu-item" href="#specifications">Specifications</a>
+            <a id="menu-item" href="#how-to">How-to</a>
+            <a id="menu-item" href="#contact-us">Contact-us</a>
           </div>
 
           <div class="flex justify-end">
@@ -351,11 +372,13 @@
                   entire operation.
                 </div>
               </div>
-              <button
-                class="max-h-[48px] px-[22px] py-[14px] rounded-full hover:bg-[#8E9C78] hover:text-[#fff] transition-all duration-700 bg-accent-secondary font-dm-sans text-base leading-[140%] tracking-[-0.0025em] font-bold text-[14px] text-center justify-start flex"
-              >
-                Discover More
-              </button>
+              <div>
+                <button
+                  class="min-h-[48px] px-[22px] py-[14px] rounded-full hover:bg-[#8E9C78] hover:text-[#fff] transition-all duration-700 bg-accent-secondary font-dm-sans text-base leading-[140%] tracking-[-0.0025em] font-bold text-[14px] text-center justify-start flex items-start"
+                >
+                  Discover More
+                </button>
+              </div>
             </div>
           </div>
 
@@ -724,7 +747,7 @@
 
       <!-- Testimonial Section -->
       <section
-        class="grid grid-col-1 desktop:grid-cols-2 gap-5 items-center mb-[40px]"
+        class="grid grid-col-1 desktop:grid-cols-2 gap-10 desktop:gap-5 items-center mb-[40px]"
       >
         <img
           src="./assets/images/scene-three.png"
@@ -735,7 +758,7 @@
           class="desktop:h-[669.3818359375px] desktop:w-[590px] desktop:border-t desktop:border-[#E9E9E9]"
         >
           <div
-            class="desktop:w-[540px] desktop:h-[294px] desktop:ml-[50px]  desktop:my-[139.69px]"
+            class="desktop:w-[540px] desktop:h-[294px] desktop:ml-[50px] desktop:my-[139.69px] border-t desktop:border-t-0 border-divider"
           >
             <h2
               class="font-crimson-text font-normal text-[32px] tablet:text-[40px] leading-[90%] tablet:leading-[110%] desktop:leading-[105%] tracking-[-0.03em] tablet:tracking-[-0.04em] text-left pt-[40px] desktop:tracking-[-0.04em]"
@@ -754,7 +777,7 @@
                 John Smith
               </span>
               <span
-                class="font-roboto-mono font-normal text-[10.5px] tablet:text-[11px] desktop:text-[12px] desktop:leading-[140%] tracking-[-0.03em] desktop:tracking-[-0.01em] text-[#485C11] "
+                class="font-roboto-mono font-normal text-[10.5px] tablet:text-[11px] desktop:text-[12px] desktop:leading-[140%] tracking-[-0.03em] desktop:tracking-[-0.01em] text-[#485C11]"
               >
                 Head of Data
               </span>
@@ -935,7 +958,7 @@
 
           <!-- Copyright Year  -->
           <div
-            class="flex w-[116.25px] tablet:w-[484.25px] desktop:w-[953.25px] "
+            class="flex w-[116.25px] tablet:w-[484.25px] desktop:w-[953.25px]"
           >
             <span
               class="font-normal font-roboto-mono text-[11px] leading-[140%] tracking-[-0.01em] align-middle"
@@ -958,5 +981,43 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      const hamburger = document.querySelector("#hamburger");
+      const closeIcon = document.querySelector("#close-icon");
+      const openIcon = document.querySelector("#open-icon");
+      const menu = document.querySelector("#menu");
+      const menuItems = document.querySelectorAll("#menu-item");
+
+      function toggleMenu() {
+        // Guard against missing elements to avoid runtime errors
+        // if (!menu || !openIcon || !closeIcon) return;
+        
+        console.log('toggle menu')
+
+        if (menu.classList.contains("show")) {
+          // Menu is visible -> hide it and show the open (hamburger) icon
+          console.log("show is there");
+          
+          openIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+          menu.classList.remove("show");
+        } else {
+          // Menu is hidden -> show it and display the close (X) icon
+          console.log("show is not there");
+          openIcon.classList.add("hidden");
+          closeIcon.classList.remove("hidden");
+          menu.classList.add("show");
+        }
+      }
+
+      hamburger.addEventListener("onClick", toggleMenu);
+      
+      menuItems.forEach(
+        function(menuItems) {
+          menuItems.addEventListener("onClick", toggleMenu)
+        }
+      )
+    </script>
   </body>
 </html>
