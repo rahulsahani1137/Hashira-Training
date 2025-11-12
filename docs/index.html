@@ -18,35 +18,78 @@
     >
       <!-- Navigation Menu -->
       <!-- Navigation Bar -->
-      <nav id="navigation" class="h-[106px] tablet:h-[148px] px-0 tablet:px-0">
+      <nav
+        id="navigation"
+        class="h-[106px] tablet:h-[148px] px-0 tablet:px-0 z-50"
+      >
         <!-- Mobile Nav  -->
-        <div
-          class="tablet:hidden h-[78px] rounded-b-[20px] shadow-md flex justify-between items-center p-[20px]"
-        >
-          <span
-            class="font-dm-sans font-medium text-[30px] leading-[120%] tracking-[-0.05em] align-middle"
-            >Area</span
+        <div class="relative rounded-b-[20px] shadow-md">
+          <div
+            class="tablet:hidden h-[78px] flex justify-between items-center p-[20px]"
           >
+            <span
+              class="font-dm-sans font-medium text-[30px] leading-[120%] tracking-[-0.05em] align-middle"
+              >Area</span
+            >
 
-          <!-- Hamburger Icon -->
-          <button class="cursor-pointer" id="hamburger" onclick="toggleMenu()">
-            <img
-              id="open-icon"
-              src="./assets/svg/icons/menu-icon.svg"
-              alt="open"
-              class="block"
-            />
-            <img
-              id="close-icon"
-              class="hidden"
-              src="./assets/svg/icons/menu-close.svg"
-              alt="close"
-            />
-          </button>
+            <!-- Hamburger Icon -->
+            <button
+              class="cursor-pointer"
+              id="hamburger"
+              onclick="toggleMenu()"
+            >
+              <img
+                id="open-icon"
+                src="./assets/svg/icons/menu-icon.svg"
+                alt="open"
+                class="block"
+              />
+              <img
+                id="close-icon"
+                class="hidden"
+                src="./assets/svg/icons/menu-close.svg"
+                alt="close"
+              />
+            </button>
+          </div>
+
+          <!-- Mobile Nav Links  -->
+          <div
+            id="menu"
+            class="absolute -top-[500px] transition-all w-full duration-500 ease-in-out flex flex-col px-5 pt-2 tablet:hidden rounded-b-[20px] *:py-[30px] z-50 bg-[#fff]"
+          >
+            <a href="#benefits" class="menu-item font-dm-sans font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-left">Benefits</a>
+            <a class="menu-item font-dm-sans font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-left" href="#specifications">Specifications</a>
+            <a href="#how-to" class="menu-item font-dm-sans font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-left">How-to</a>
+            <a href="#contact-us" class="menu-item font-dm-sans font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-left">Contact-us</a>
+            <div class="flex justify-start menu-item pt-[50px]">
+              <button
+                class="bg-[#485C11] hover:bg-[#8E9C78] transition-all duration-700 ease-in-out text-[#fff] px-[22px] py-[14px] text-[14px] leading-[140%] tracking-[-0.025em] font-bold text-center flex justify-center items-center font-dm-sans rounded-full gap-0.5 group max-h-[48px] mt-5"
+              >
+                Learn More
+                <div
+                  class="transition-transform duration-300 ease-in-out transform group-hover:-translate-y-2"
+                >
+                  <svg
+                    width="7"
+                    height="20"
+                    viewBox="0 0 7 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.01037 11.9875V8.04598L5.64939 8.08556L0.735155 13.0055L0 12.2703L4.91423 7.35606L4.96513 7.99508H1.0066V6.99414L6 7.00545V11.9875H5.01037Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
 
         <!-- Tablet & Desktop Nav  -->
-        <div class="hidden tablet:flex justify-between h-[148px] bg-white">
+        <div class="hidden tablet:flex z-40 justify-between h-[148px] bg-white">
           <div
             class="font-dm-sans text-center font-medium mt-[20px] text-[30px] tracking-[-0.05em] leading-[120%]"
           >
@@ -54,13 +97,12 @@
           </div>
 
           <div
-            id="menu"
             class="show w-[399px] h-[60px] flex fixed left-[200px] right-[200px] top-[16px] justify-center items-center font-bold text-[14px] gap-[27px] rounded-full mx-auto z-50 bg-[#fff]/45 backdrop-blur-lg bg-blend-normal"
           >
-            <a id="menu-item" href="#benefits">Benefits</a>
-            <a id="menu-item" href="#specifications">Specifications</a>
-            <a id="menu-item" href="#how-to">How-to</a>
-            <a id="menu-item" href="#contact-us">Contact-us</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#specifications">Specifications</a>
+            <a href="#how-to">How-to</a>
+            <a href="#contact-us">Contact-us</a>
           </div>
 
           <div class="flex justify-end">
@@ -319,7 +361,7 @@
             </p>
 
             <div
-              class="*:py-5 *:flex tablet:*:items-center *:justify-start *:gap-[30px] *:border-t *:border-divider"
+              class="*:py-5 *:flex tablet:*:items-start *:justify-start *:gap-[30px] *:border-t *:border-divider"
             >
               <div>
                 <p
@@ -987,37 +1029,32 @@
       const closeIcon = document.querySelector("#close-icon");
       const openIcon = document.querySelector("#open-icon");
       const menu = document.querySelector("#menu");
-      const menuItems = document.querySelectorAll("#menu-item");
+      const menuItems = document.querySelectorAll(".menu-item");
 
       function toggleMenu() {
-        // Guard against missing elements to avoid runtime errors
-        // if (!menu || !openIcon || !closeIcon) return;
-        
-        console.log('toggle menu')
+        // console.log("toggle menu");
 
         if (menu.classList.contains("show")) {
           // Menu is visible -> hide it and show the open (hamburger) icon
-          console.log("show is there");
-          
-          openIcon.classList.remove("hidden");
-          closeIcon.classList.add("hidden");
-          menu.classList.remove("show");
-        } else {
-          // Menu is hidden -> show it and display the close (X) icon
-          console.log("show is not there");
+          // console.log("show is there");
+
           openIcon.classList.add("hidden");
           closeIcon.classList.remove("hidden");
-          menu.classList.add("show");
+          menu.classList.remove("absolute", "-top-[500px]", "show");
+        } else {
+          // Menu is hidden -> show it and display the close (X) icon
+          // console.log("show is not there");
+          openIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+          menu.classList.add("absolute", "-top-[500px]", "show");
         }
       }
 
       hamburger.addEventListener("onClick", toggleMenu);
-      
-      menuItems.forEach(
-        function(menuItems) {
-          menuItems.addEventListener("onClick", toggleMenu)
-        }
-      )
+
+      menuItems.forEach(function (menuItems) {
+        menuItems.addEventListener("click", toggleMenu);
+      });
     </script>
   </body>
 </html>
