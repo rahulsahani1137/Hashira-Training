@@ -58,10 +58,30 @@
             id="menu"
             class="absolute -top-[500px] transition-all w-full duration-500 ease-in-out flex flex-col px-5 pt-2 tablet:hidden rounded-b-[20px] *:py-[30px] z-50 bg-[#fff]"
           >
-            <a href="#benefits" class="menu-item font-dm-sans font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-left">Benefits</a>
-            <a class="menu-item font-dm-sans font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-left" href="#specifications">Specifications</a>
-            <a href="#how-to" class="menu-item font-dm-sans font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-left">How-to</a>
-            <a href="#contact-us" class="menu-item font-dm-sans font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-left">Contact-us</a>
+            <a
+              href="#benefits"
+              tabindex="1"
+              class="menu-item font-dm-sans font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-left"
+              >Benefits</a
+            >
+            <a
+              tabindex="2"
+              class="menu-item font-dm-sans font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-left"
+              href="#specifications"
+              >Specifications</a
+            >
+            <a
+              tabindex="3"
+              href="#how-to"
+              class="menu-item font-dm-sans font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-left"
+              >How-to</a
+            >
+            <a
+              tabindex="4"
+              href="#contact-us"
+              class="menu-item font-dm-sans font-bold text-[14px] leading-[140%] tracking-[-0.025em] text-left"
+              >Contact-us</a
+            >
             <div class="flex justify-start menu-item pt-[50px]">
               <button
                 class="bg-[#485C11] hover:bg-[#8E9C78] transition-all duration-700 ease-in-out text-[#fff] px-[22px] py-[14px] text-[14px] leading-[140%] tracking-[-0.025em] font-bold text-center flex justify-center items-center font-dm-sans rounded-full gap-0.5 group max-h-[48px] mt-5"
@@ -99,10 +119,10 @@
           <div
             class="show w-[399px] h-[60px] flex fixed left-[200px] right-[200px] top-[16px] justify-center items-center font-bold text-[14px] gap-[27px] rounded-full mx-auto z-50 bg-[#fff]/45 backdrop-blur-lg bg-blend-normal"
           >
-            <a href="#benefits">Benefits</a>
-            <a href="#specifications">Specifications</a>
-            <a href="#how-to">How-to</a>
-            <a href="#contact-us">Contact-us</a>
+            <a tabindex="1" href="#benefits">Benefits</a>
+            <a tabindex="2" href="#specifications">Specifications</a>
+            <a tabindex="3" href="#how-to">How-to</a>
+            <a tabindex="4" href="#contact-us">Contact-us</a>
           </div>
 
           <div class="flex justify-end">
@@ -537,7 +557,7 @@
               <div
                 class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
               >
-                Full UTF-8 support
+                Advanced AI insights
               </div>
             </div>
 
@@ -552,7 +572,7 @@
               <div
                 class="text-black text-[10.5px] tablet:text-[11px] desktop:text-[12px] font-roboto-mono font-normal leading-[14.70px] tablet:leading-[15.40px] desktop:leading-[16.80px]"
               >
-                Full UTF-8 support
+                Ultra-fast browsing
               </div>
             </div>
 
@@ -1052,6 +1072,7 @@
 
       hamburger.addEventListener("onClick", toggleMenu);
 
+      //if menu nav links are clicked
       menuItems.forEach(function (menuItems) {
         menuItems.addEventListener("click", toggleMenu);
       });

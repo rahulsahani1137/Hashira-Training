@@ -5,8 +5,7 @@ export default {
     screens: {
       tablet: '800px',
       desktop: '1280px'
-    }
-    ,
+    },
     colors: {
       'headline': '#000000',
       'caption': '#485C11',
