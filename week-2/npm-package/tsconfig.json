@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /* Base Options: */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "esnext",
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "allowJs": false,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "forceConsistentCasingInFileNames": true,
+    /* Emit */
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    /* If NOT transpiling with TypeScript: */
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
+    "noEmit": true,
+    /* If your code runs in the DOM: */
+    "lib": ["esnext", "dom", "dom.iterable"],
+  },
+  "include": [
+    "src"
+  ]
+}

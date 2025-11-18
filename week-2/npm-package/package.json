@@ -1,0 +1,47 @@
+{
+  "name": "@rahulsahani/form-with-validator",
+  "publishConfig": {
+    "registry": "ttps://npm.pkg.github.com/@solcn"
+  },
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "rollup --config --watch",
+    "build": "rollup --config --bundleConfigAsCjs",
+    "release": "npm run build && npx changeset publish",
+    "storybook": "storybook dev -p 6006",
+    "build:storybook": "storybook build",
+    "lint": "eslint ./src/ --ext .ts,.tsx",
+    "lint:fix": "eslint ./src --ext .ts,.tsx --fix",
+    "prepare": "husky",
+    "format": "prettier --write --parser typescript '**/*.{ts,tsx}'"
+  },
+  "keywords": [],
+  "author": "Rahul Sahani",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@changesets/cli": "^2.29.7",
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@types/react": "^19.2.6",
+    "autoprefixer": "^10.4.22",
+    "husky": "^9.1.7",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "rollup": "^4.53.2",
+    "rollup-plugin-dts": "^6.2.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tailwindcss": "^4.1.17",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3"
+  }
+}
