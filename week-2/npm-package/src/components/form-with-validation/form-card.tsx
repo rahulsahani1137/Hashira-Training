@@ -16,7 +16,7 @@ const FormCard = ({ className, ...props }: React.ComponentProps<"div">) => {
 const FormTitle = ({ className, ...props }: React.ComponentProps<"div">) => {
     return (
         <div
-            className={cn("leading-none font-semibold", className)}
+            className={cn("leading-none font-bold text-lg  text-center self-stretch", className)}
             {...props}
         />
     )
