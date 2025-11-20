@@ -1,5 +1,2 @@
-import "../globals.css"
-
-import Form from "./components/form-with-validator";
-
-export default Form;
+export { default as Button } from "./button/button.js"
+export { default as Form } from "./Form.js"

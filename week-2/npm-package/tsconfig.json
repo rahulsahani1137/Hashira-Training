@@ -1,32 +1,20 @@
 {
   "compilerOptions": {
-    /* Base Options: */
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "target": "esnext",
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "allowJs": false,
-    "resolveJsonModule": true,
-    "moduleDetection": "force",
-    "forceConsistentCasingInFileNames": true,
-    /* Emit */
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    /* Strictness */
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
-    /* If NOT transpiling with TypeScript: */
-    "moduleResolution": "Bundler",
+  
+    "target": "ESNext",
+    "useDefineForClassFields": true,
     "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "Node",
+    "strict": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
     "noEmit": true,
-    /* If your code runs in the DOM: */
-    "lib": ["esnext", "dom", "dom.iterable"],
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true
   },
-  "include": [
-    "src/**/*", 
-    "*.d.ts"
-  ]
+  "include": ["src"]
 }
