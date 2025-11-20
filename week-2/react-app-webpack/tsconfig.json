@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "jsx": "react",
+        "sourceMap": true,
+        "removeComments": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "preserveConstEnums": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        // output
+        "outDir": "./dist"
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}

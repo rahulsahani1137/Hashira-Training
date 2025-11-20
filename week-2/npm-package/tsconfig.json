@@ -26,6 +26,7 @@
     "lib": ["esnext", "dom", "dom.iterable"],
   },
   "include": [
-    "src"
+    "src/**/*", 
+    "*.d.ts"
   ]
 }

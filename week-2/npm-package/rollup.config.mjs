@@ -27,9 +27,24 @@ export default [
             commonjs(),
             typescript({
                 tsconfig: "./tsconfig.json",
-                exclude: ["**/*.test.tsx", "**/*.test.ts", "**/*.stories.ts", "**/*.css"]
+                exclude: [
+                    "**/*.test.tsx",
+                    "**/*.test.ts",
+                    "**/*.stories.ts",
+                    "**/*.css"
+                ]
             }),
-            postcss({ extensions: [".css"], inject: true, extract: false }),
+            postcss({
+                extensions: [".css"], 
+                inject: true, 
+                extract: true,
+                minimize: true,
+                sourceMap: true,
+                plugins: [
+                    require("tailwindcss"),
+                    require("autoprefixer")
+                ]
+            }),
             terser(),
         ],
         context: 'this',
