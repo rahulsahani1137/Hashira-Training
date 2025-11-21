@@ -1,6 +1,6 @@
 {
   "name": "@rahulsahani/form-with-validator",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
@@ -30,10 +30,10 @@
     "dev": "vite",
     "build": "vite build && npm run build:css",
     "build:css": "tailwindcss -i src/index.css -o dist/styles.css",
+    "release": "npm version patch && npm run build && npm publish",
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  
   "dependencies": {
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
