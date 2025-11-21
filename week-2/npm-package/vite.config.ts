@@ -27,14 +27,16 @@ export default defineConfig(({ command }) => {
       dts({
         include: ['src/**/*.ts', 'src/**/*.tsx', 'index.ts'],
         outDir: 'dist',
-        insertTypesEntry: true
+        rollupTypes: true,
+        insertTypesEntry: true,
+        tsconfigPath: path.resolve(__dirname, 'tsconfig.app.json')
       })
     ],
     build: {
       lib: {
         entry: path.resolve(__dirname, './index.ts'),
         formats: ['es', 'umd'],
-        name: 'Example Form',
+        name: 'Form with validation',
         fileName: (format) => `index.${format}.js`
       },
       rollupOptions: {

@@ -1,24 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { cn } from "../../utils/cn";
-import { validator, type ValidationResult } from "../../utils/validator";
+import { validator } from "../../utils/validator";
 import { useDebounce } from "../../hooks/use-debounce";
+import type { FormInputType, ValidationEvent, ValidationResult } from "../../types/types";
 
-const FormInput = ({ className, placeholder, inputLabel, type, ...props }: { className?: string, placeholder: string, inputLabel: string, type: "email" | "phone" }) => {
+const FormInput = ({ className, placeholder, inputLabel, type, ...props }: FormInputType) => {
   const [error, setError] = useState<ValidationResult>();
-  
-  interface ValidationEvent {
-    target: {
-      value: string;
-    };
-  }
-  
-  // const debouncedValidInputCheck = useDebounce(handleValidInputCheck);
-  
+  const [inputValue, setInputValue] = useState<string>("");
+
+  const debouncedValue = useDebounce(inputValue, 800);
+
   const handleValidInputCheck = (e: ValidationEvent): void => {
-    const value = e.target.value;
-    const validationError = validator(type, value);
-    setError(validationError);
+    setInputValue(e.target.value);
   }
+
+  // Validate when debounced value changes in state from input
+  useEffect(() => {
+    if (debouncedValue) {
+      const validationError = validator(type, debouncedValue);
+      setError(validationError);
+    }
+  }, [debouncedValue]);
 
   return (
     <div>

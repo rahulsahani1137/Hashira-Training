@@ -1,7 +1,11 @@
+import { useState } from "react"
 import * as React from "react"
 import { cn } from "../../utils/cn"
+import { useThrottle } from "../../hooks/use-throttle"
+import type { FormActionButtonProps, FormCardProps, FormContentProps, FormFooterProps, FormTitleProps } from "../../types/types"
 
-const FormCard = ({ className, ...props }: React.ComponentProps<"div">) => {
+
+const FormCard = ({ className, ...props }: FormCardProps) => {
     return (
         <div
             className={cn(
@@ -13,7 +17,7 @@ const FormCard = ({ className, ...props }: React.ComponentProps<"div">) => {
     )
 }
 
-const FormTitle = ({ className, ...props }: React.ComponentProps<"div">) => {
+const FormTitle = ({ className, ...props }: FormTitleProps) => {
     return (
         <div
             className={cn("leading-none font-bold text-lg  text-center self-stretch", className)}
@@ -22,7 +26,7 @@ const FormTitle = ({ className, ...props }: React.ComponentProps<"div">) => {
     )
 }
 
-const FormContent = ({ className, ...props }: React.ComponentProps<"div">) => {
+const FormContent = ({ className, ...props }: FormContentProps) => {
     return (
         <div
             className={cn("px-6", className)}
@@ -32,13 +36,37 @@ const FormContent = ({ className, ...props }: React.ComponentProps<"div">) => {
 }
 
 
-const FormActionButton = ({ title, className, ...props }: React.ComponentProps<"button">) => {
+const FormActionButton = ({ title, className, onClick, ...props }: FormActionButtonProps) => {
+    const [clickCount, setClickCount] = useState(0);
+
+    // Throttled version of the click counter
+    const throttledClick = useThrottle(clickCount, 1000);
+
+    React.useEffect(() => {
+        if (throttledClick > 0) {
+            // Perform actual submit logic here
+            console.log("Submitted!", throttledClick);
+        }
+    }, [throttledClick]);
+
+    const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+        setClickCount(prev => prev + 1);
+        onClick?.(e);
+    };
+
     return (
-        <button title={title} className={cn("w-full bg-[#212122] text-white py-2 rounded-md", className)} {...props}>{title}</button>
+        <button
+            title={title}
+            className={cn("w-full bg-[#212122] text-white py-2 rounded-md disabled:opacity-50 disabled:cursor-not-allowed", className)}
+            onClick={handleClick}
+            {...props}
+        >
+            {title}
+        </button>
     )
 }
 
-const FormFooter = ({ className, ...props }: React.ComponentProps<"div">) => {
+const FormFooter = ({ className, ...props }: FormFooterProps) => {
     return (
         <div
             className={cn("flex items-center px-6 border-t text-xs pt-2", className)}
